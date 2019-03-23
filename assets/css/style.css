@@ -14,3 +14,16 @@ body{
    
     padding: 0px;
 }
+.audio{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+       
+    padding: 0px;
+
+}
+audio{
+    opacity: .4;
+    width: 150px;
+    height: 40px;
+}

@@ -20,7 +20,7 @@
         </div>
         <div class="card-action">
           <a class="waves-effect waves-light btn-large">Aventura</a><br><br>
-          <a class="waves-effect waves-light btn-large btn modal-trigger" href="#modal4">Loja</a>
+          <a class="waves-effect btn-large btn modal-trigger" href="#modal4">Loja</a>
           <?php include("loja.php"); ?>
           <br>
         </div>
@@ -50,7 +50,8 @@
         <div class="card-action">
             
 
-        <a href="#">Trocar herói</a>
+        <a class="modal-trigger" href="#modal5">Trocar herói</a>
+        <?php include("personagens.php"); ?>
         <a href="#">Editar herói</a>
           <a href="#">Criar novo</a>
         </div>
@@ -58,6 +59,11 @@
     </div>
     
   </div>
+  <div class="audio">
+  <audio controls autoplay>
+  <source src="../assets/audio/audio.mp3" type="audio/mpeg">
+</audio>
+</div>
  
     
 <!--  Scripts-->
