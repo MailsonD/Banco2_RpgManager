@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
 </head>
 <body>
+<img src="../assets/img/gradient.jpg" class="degrade">
 <div class="row">
     <div class="col s12 m2">
 
@@ -47,13 +48,13 @@
          <p class="white-text">King</p>
          <br>
 
-          <a class="btn-large waves-effect waves-light btn modal-trigger" href="#modal3">Inventário</a>
+          <a class="btn-large waves-effect waves-light btn modal-trigger  deep-orange darken-3" href="#modal3">Inventário</a>
           <?php include("inventario.php"); ?>
-          <a class="waves-effect waves-light btn-large btn modal-trigger" href="#ficha">Ficha</a>
+          <a class="waves-effect waves-light btn-large btn modal-trigger  deep-orange darken-3" href="#ficha">Ficha</a>
           <?php include("ficha.php"); ?>
 
         </div>
-        <ul class="tabs">
+        <ul class="tabs grey darken-4">
         <li class="tab"><a href="#test1">Meus heróis</a></li>
         <li class="tab"><a href="#test4">Criar novo</a></li>
       </ul>

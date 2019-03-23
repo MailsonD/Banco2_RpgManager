@@ -1,9 +1,17 @@
 body{
-    background-image: url('../img/bg.jpg');
+    background-image: url('../img/bg2.jpg');
+    
     background-size: 100%;
+    background-color: #0c0c0c;
+
 }
 .avatar{
     width: 150px;
+}
+.degrade{
+    width: 100%;
+    opacity: .6;
+    position: absolute;
 }
 .item{
     width:100px;
