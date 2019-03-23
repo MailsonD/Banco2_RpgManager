@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/materialize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/materialize.min.css" />
-    <script src="assets/js/materialize.js"></script>
-    <script src="assets/js/materialize.min.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+  
+    
 </head>
 <body>
 <div class="container">
@@ -27,8 +28,7 @@
                 <div class="modal-content">
                     <center>
                         <div class="row">
-                            <form class="col10 s10"
-                                  action="/inicio?comando=UsuariosController&acao=autenticar" method="POST">
+                            <form class="col10 s10">
                                 <div class="row">
                                     <div class="input-field col10 s10">
                                         <input id="email" type="email" name="email" class="validate">
@@ -54,47 +54,28 @@
                 <div class="modal-content">
                     <center>
                         <div class="row">
-                            <form class="col10 s10" action="/inicio?comando=UsuariosController&acao=salvar"
-                                  method="POST">
+                            <form class="col10 s10">
                                 <div class="row">
-                                    <c:if test="${msgErro!=null}">
-                                        <span id="Erro">${msgErro}</span>
-                                    </c:if>
+                                  
                                    <div class="input-field col10 s10">
-                                        <input id="name" type="text" class="validate" name="nome" value="${usuario!=null ? usuario.nome : ""}" maxlength="40" required>
+                                        <input id="name" type="text" class="validate" name="nome"maxlength="40" required>
                                        <label for="name">Nome<font color="red"> * </font></label></div>
                                     <div class="input-field col10 s10">
-                                        <input id="email" type="email" class="validate" name="email" value="${usuario!=null ? usuario.email : ""}" required>
+                                        <input id="email" type="email" class="validate" name="email"required>
                                         <label for="email">E-mail<font color="red"> * </font></label></div>
                                     <div class="input-field col10 s10">
-                                        <input id="password" type="password" class="validate" name="senha" value="${usuario!=null ? usuario.senha: ""}" minlength="6" required>
+                                        <input id="password" type="password" class="validate" name="senha" minlength="6" required>
                                         <label for="password">Senha<font color="red"> * </font></label></div>
                                     <div class="input-field col10 s10">
-                                        <input id="cellphone" type="text" class="validate" name="telefone" value="${usuario!=null && usuario.telefone != null ? usuario.telefone : ""}">
+                                        <input id="cellphone" type="text" class="validate" name="telefone">
                                         <label for="cellphone">Telefone</label>
                                     </div>
                                     <div class="input-field col10 s10">
-                                        <input id="date" type="date" class="validate" name="nascimento" value="${usuario!=null ? usuario.nascimento : ""}" required>
+                                        <input id="date" type="date" class="validate" name="nascimento" required>
                                         <label for="date">Data de Nascimento<font color="red"> * </font></label>
                                     </div>
 
-                                    <div class="input-field col10 s10">Função
-
-                                        <p>
-                                            <label>
-                                                <input name="FUNCTION" type="radio" value="professor" />
-                                                <span>Professor</span>
-                                            </label>
-
-                                            <label>
-                                                <input name="FUNCTION" type="radio" value="aluno" checked/>
-                                                <span>Aluno</span>
-                                            </label>
-                                        </p>
-
-
-                                    </div>
-
+                                 
                                     <div class="input-field col10 s10">Sexo
 
                                         <p>
@@ -126,5 +107,19 @@
 
 </div>
     
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="assets/js/materialize.js"></script>
+    <script src="assets/js/materialize.min.js"></script>
+
+<script src="assets/js/init.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+</script>
 </body>
+
 </html>
