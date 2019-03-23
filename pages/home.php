@@ -12,22 +12,24 @@
 <body>
 <div class="row">
     <div class="col s12 m2">
+
        
-      <div class="card center-align">
-        <div class="card-content">
-          <span class="card-title">Menu</span>
+      <div class="card  transparent"><img src="../assets/img/rpgLOGO.png" class="logo center-align">
+      
+       
+         
           
-        </div>
-        <div class="card-action">
-          <a class="waves-effect waves-light btn-large">Aventura</a><br><br>
-          <a class="waves-effect btn-large btn modal-trigger" href="#modal4">Loja</a>
+    
+        <div class="card-action center-align">
+          <a class="waves-effect waves-light btn-large red darken-4">Aventura</a><br><br>
+          <a class="waves-effect btn-large btn modal-trigger red darken-4" href="#modal4">Loja</a>
           <?php include("loja.php"); ?>
           <br>
         </div>
-        <div class="card-action">
+        <div class="card-action center-align">
      
-          <a class="waves-effect waves-light btn-small">Opções</a>
-          <a class="waves-effect waves-light btn-small">Sair</a>
+          <a class="waves-effect waves-light btn-small  red darken-4">Opções</a>
+          <a class="waves-effect waves-light btn-small red lighten-1">Sair</a>
         </div>
       </div>
     </div>
@@ -35,14 +37,14 @@
     <div id="test1" class="col s12 m6" > <?php include("personagens.php"); ?></div>
     <div id="test4" class="col s12 m5">Test 4</div>
     <div class="col s8 m4 ">
-      <div class="card center-align char">
+      <div class="card center-align char grey darken-4">
        
             
         
         <div class="card-content">
             <img src='/assets/img/char.png' class="avatar">
-         <h5>Leoric</h5>
-         <p>King</p>
+         <h5 class="white-text">Leoric</h5>
+         <p class="white-text">King</p>
          <br>
 
           <a class="btn-large waves-effect waves-light btn modal-trigger" href="#modal3">Inventário</a>

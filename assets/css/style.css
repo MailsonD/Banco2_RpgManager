@@ -27,3 +27,10 @@ audio{
     width: 150px;
     height: 40px;
 }
+.logo{
+    width:200px;
+    z-index: 5;
+}
+.board{width: 100%;
+position: absolute;
+z-index: 1;}
