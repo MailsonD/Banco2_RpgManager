@@ -31,6 +31,10 @@
         </div>
       </div>
     </div>
+
+    <div id="test1" class="col s12 m5" > <?php include("personagens.php"); ?></div>
+    <div id="test2" class="col s12 m5">Test 2</div>
+    <div id="test4" class="col s12 m5">Test 4</div>
     <div class="col s10 m5 ">
       <div class="card center-align char">
        
@@ -47,18 +51,20 @@
           <a class="waves-effect waves-light btn-large">Ficha</a>
 
         </div>
-        <div class="card-action">
-            
-
-        <a class="modal-trigger" href="#modal5">Trocar herói</a>
-        <?php include("personagens.php"); ?>
-        <a href="#">Editar herói</a>
-          <a href="#">Criar novo</a>
-        </div>
+        <ul class="tabs">
+        <li class="tab"><a href="#test1">Trocar herói</a></li>
+        <li class="tab"><a href="#test2">Editar herói</a></li>
+        <li class="tab"><a href="#test4">Criar novo</a></li>
+      </ul>
+         
       </div>
     </div>
+        
     
+
   </div>
+  
+
   <div class="audio">
   <audio controls autoplay>
   <source src="../assets/audio/audio.mp3" type="audio/mpeg">
@@ -78,6 +84,11 @@
     $(document).ready(function () {
         $('.modal').modal();
     });
+</script>
+<script>
+    $(document).ready(function(){
+    $('.tabs').tabs();
+  });
 </script>
 </body>
 </html>
