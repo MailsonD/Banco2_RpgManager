@@ -2,3 +2,6 @@ body{
     background-image: url('../img/bg.jpg');
     background-size: 100%;
 }
+.avatar{
+    width: 150px;
+}
