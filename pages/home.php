@@ -33,7 +33,6 @@
     </div>
 
     <div id="test1" class="col s12 m5" > <?php include("personagens.php"); ?></div>
-    <div id="test2" class="col s12 m5">Test 2</div>
     <div id="test4" class="col s12 m5">Test 4</div>
     <div class="col s10 m5 ">
       <div class="card center-align char">
@@ -48,12 +47,12 @@
 
           <a class="btn-large waves-effect waves-light btn modal-trigger" href="#modal3">Inventário</a>
           <?php include("inventario.php"); ?>
-          <a class="waves-effect waves-light btn-large">Ficha</a>
+          <a class="waves-effect waves-light btn-large btn modal-trigger" href="#ficha">Ficha</a>
+          <?php include("ficha.php"); ?>
 
         </div>
         <ul class="tabs">
-        <li class="tab"><a href="#test1">Trocar herói</a></li>
-        <li class="tab"><a href="#test2">Editar herói</a></li>
+        <li class="tab"><a href="#test1">Meus heróis</a></li>
         <li class="tab"><a href="#test4">Criar novo</a></li>
       </ul>
          
@@ -66,7 +65,7 @@
   
 
   <div class="audio">
-  <audio controls autoplay>
+  <audio controls autoplay on loop>
   <source src="../assets/audio/audio.mp3" type="audio/mpeg">
 </audio>
 </div>

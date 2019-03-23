@@ -6,8 +6,8 @@
           <p>Aqui vou listar os personagens </p>
         </div>
         <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
+          <a href="#">Editar</a>
+          <a href="#">Deletar</a>
         </div>
       </div>
    
