@@ -29,8 +29,8 @@
         </div>
       </div>
     </div>
-    <div class="col s10 m5">
-      <div class="card center-align">
+    <div class="col s10 m5 ">
+      <div class="card center-align char">
        
             
         

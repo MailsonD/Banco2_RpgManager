@@ -8,3 +8,9 @@ body{
 .item{
     width:100px;
 }
+.char{
+    position: absolute;
+    right: 0px;
+   
+    padding: 0px;
+}
