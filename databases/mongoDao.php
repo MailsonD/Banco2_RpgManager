@@ -22,16 +22,27 @@ require("connectionMongo.php");
 //	 ],
 //]
 
-//Pega a conexão e utiliza como variável global
 
+//Para rodar o resultado de uma consulta é necessário:
+//
+//foreach($result as $document){
+//	--CODE	
+//}
+//
+//para acessar um campo do documento basta por:
+//$document['campo'];
+//
+
+
+
+//Pega a conexão e utiliza como variável global
+//Esta variável está com escopo global, porém ainda é necessário especificar isso na função
 $db = getConnectionMongo();
+
 //função genérica para inserir um documento qualquer em uma coleção qualquer
 function inserir($nomeColecao,$documento){
 	global $db;
-	$db->Usuario->insertOne([
-		'nome'=>'Dennis',
-		'senha'=>'564',
-	]);	
+	$db->$nomeColecao->insertOne($documento);	
 }
 
 //função genérica para buscar um único documento do banco
