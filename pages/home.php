@@ -38,6 +38,11 @@
             <img src='/assets/img/char.png' class="avatar">
          <h5>Leoric</h5>
          <p>King</p>
+         <br>
+
+          <a class="waves-effect waves-light btn-large">Inventário</a>
+          <a class="waves-effect waves-light btn-large">Ficha</a>
+
         </div>
         <div class="card-action">
 
