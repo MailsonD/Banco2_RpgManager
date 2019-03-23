@@ -50,13 +50,17 @@ function buscarPorCondicao($nomeColecao,$condicao){
 	return $db->$nomeColecao->find($condicao);
 }
 
-//função genérica para atualizar um documento que atende a uma
+//função genérica para atualizar um ou vários documentos que atende a uma
 //determianda condição
 function atualizar($nomeColecao,$condicao,$atualizacao){
-	$db->$nomeColecao->updateOne(
+	$db->$nomeColecao->updateMany(
 		$condicao,
 		['$set' => $atualizacao]
 	);
+}
+
+function remover($nomeColecao,$condicao){
+	$db->$nomeColecao->deleteMany($condicao);
 }
 
 
