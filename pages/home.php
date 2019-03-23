@@ -32,9 +32,9 @@
       </div>
     </div>
 
-    <div id="test1" class="col s12 m5" > <?php include("personagens.php"); ?></div>
+    <div id="test1" class="col s12 m6" > <?php include("personagens.php"); ?></div>
     <div id="test4" class="col s12 m5">Test 4</div>
-    <div class="col s10 m5 ">
+    <div class="col s8 m4 ">
       <div class="card center-align char">
        
             
