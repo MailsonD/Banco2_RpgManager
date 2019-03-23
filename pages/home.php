@@ -40,7 +40,8 @@
          <p>King</p>
          <br>
 
-          <a class="waves-effect waves-light btn-large">Inventário</a>
+          <a class="btn-large waves-effect waves-light btn modal-trigger" href="#modal3">Inventário</a>
+          <?php include("inventario.php"); ?>
           <a class="waves-effect waves-light btn-large">Ficha</a>
 
         </div>
@@ -56,5 +57,18 @@
   </div>
  
     
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../assets/js/materialize.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+
+<script src="../assets/js/init.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.modal').modal();
+    });
+</script>
 </body>
 </html>
