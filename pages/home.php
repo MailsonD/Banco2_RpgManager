@@ -20,7 +20,9 @@
         </div>
         <div class="card-action">
           <a class="waves-effect waves-light btn-large">Aventura</a><br><br>
-          <a class="waves-effect waves-light btn-large">Loja</a><br>
+          <a class="waves-effect waves-light btn-large btn modal-trigger" href="#modal4">Loja</a>
+          <?php include("loja.php"); ?>
+          <br>
         </div>
         <div class="card-action">
      
@@ -46,6 +48,7 @@
 
         </div>
         <div class="card-action">
+            
 
         <a href="#">Trocar herói</a>
         <a href="#">Editar herói</a>
