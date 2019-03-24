@@ -6,6 +6,7 @@
           <p>Aqui vou listar os personagens </p>
         </div>
         <div class="card-action">
+        <a href="#">Escolher</a>
           <a href="#">Editar</a>
           <a href="#">Deletar</a>
         </div>

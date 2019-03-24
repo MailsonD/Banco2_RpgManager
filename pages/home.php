@@ -47,8 +47,10 @@
           <?php include("ficha.php"); ?>
 
         </div>
-        <ul class="tabs grey darken-4">
+        <ul class="tabs grey darken-4"> 
+      
         <li class="tab"><a href="#test1">Meus heróis</a></li>
+  <li class="tab"><a class="active" href=""></a></li>
         <li class="tab"><a href="#test4">Criar novo</a></li>
       </ul>
          
