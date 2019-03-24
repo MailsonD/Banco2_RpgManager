@@ -12,7 +12,7 @@
 <body>
 <div class="card horizontal transparent chat m12">
 <div class="card-content grey darken-4 center-align m3">
-<a class="waves-effect btn-small btn red darken-4" href="home.php">Sair</a>
+<a class="waves-effect btn-small btn red darken-4" href="/pages/home.php">Sair</a>
 <br><hr>
 <a class="waves-effect btn-small btn red darken-4" href="">Ficha</a>
 <br><br><p class="white-text">Jogadores <br> conectados: </p><br>
@@ -37,8 +37,10 @@
 </div>
 
 <div class="row col12 m12"> 
-<div class="card-content grey darken-4 col6 m6">
+<div class="card-content white batepapo">
 <div class="card-content white">
+   <p> oi</p> <hr>
+
 </div>
 </div>
 </div>
