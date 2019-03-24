@@ -10,10 +10,16 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/game.css" />
 </head>
 <body>
-<img src="../assets/img/gradient.jpg" class="degrade">
-<img src="../assets/img/header.png" class="stroke">
-<div class="card transparent chat">
-<div class="card-content grey darken-4">oi</div></div>
+<div class="card horizontal transparent chat">
+<div class="card-content grey darken-4 center-align">
+<a class="waves-effect btn-small btn red darken-4" href="home.php">Sair</a>
+<br><hr><br>
+<a class="waves-effect btn-small btn red darken-4" href="">Ficha</a>
+<br><br><p class="white-text">Jogadores <br> conectados: </p><br>
+<p class="white-text">Tauriel</p><br>
+<p class="white-text">Erzeal</p><br>
+<p class="white-text">Kvothe</p><br>
+</div></div>
 
 </body>
 </html>
