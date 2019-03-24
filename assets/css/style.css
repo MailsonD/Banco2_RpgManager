@@ -8,6 +8,9 @@ body{
 .avatar{
     width: 150px;
 }
+#modal4{
+    background-image: url('../img/store.jpg');
+}
 #ficha{
     background-image: url('../img/texture.jpg');
 

@@ -16,7 +16,7 @@
       <div class="card  transparent"><img src="../assets/img/rpgLOGO.png" class="logo center-align">
          <div class="card-action center-align">
           <a class="waves-effect waves-light btn-large red darken-4">Aventura</a><br><br>
-          <a class="waves-effect btn-large btn modal-trigger red darken-4" href="#modal4">Loja</a>
+          <a class="waves-effect btn-large btn modal-trigger red darken-4" href="#modal4" id="store">Loja</a>
           <?php include("loja.php"); ?>
           <br>
         </div>
@@ -85,5 +85,7 @@
     $('.tabs').tabs();
   });
 </script>
+
+
 </body>
 </html>
