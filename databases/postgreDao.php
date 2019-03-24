@@ -4,8 +4,9 @@ require("conncectionPostgres.php");
 
 
 
-function inserir($nomeTabela,$dados){
+function inserirPG($nomeTabela,$dados){
 	$con = getConnection();	
+	
 	$campos = implode(', ', array_keys($data));
     $valores = "'".implode("', '", $data)."'";
 
@@ -22,10 +23,10 @@ function inserir($nomeTabela,$dados){
     }
 }
 
-function buscar($nomeTabela,$condicao = null,$campos = '*'){
+function buscarPG($nomeTabela,$condicao = null,$campos = '*'){
 	$con = getConnection();	
 
-	$condicao = ($condicao) ? " {$condicao} ": null;
+	$condicao = ($condicao) ? " WHERE {$condicao} ": "";
 
 	$query = "SELECT {$campos} FROM {$nomeTabela} {$condicao}";
 
@@ -47,6 +48,55 @@ function buscar($nomeTabela,$condicao = null,$campos = '*'){
 	closeConnection($con);
 }
 
+function ataulziarPG($nomeTabela,$dadosAtualizar,$condicao = null){
+	$con = getConnection();
+
+	$condicao = ($condicao) ? " WHERE {$condicao} " : "";
+
+	foreach ($data as $chave => $valor){
+        $campos[] = "{$chave} = '{$valor}'";
+    }
+
+    $campos = implode(', ', $campos);
+
+    $query = "UPDATE {$nomeTabela} SET {$campos}{$condicao}";
+
+    $result = pg_query($con,$query);
+
+    if($result){
+    	return true;
+    }else{
+    	return false;
+    }
+
+	closeConnection($con);
+}
+
+function deletarPG($nomeTabela,$condicao){
+	$con = getConnection();
+
+	$condicao = ($condicao) ? " WHERE {$condicao} " : "";
+
+	$query = "DELETE FROM {$nomeTabela} {$condicao}";
+
+	$result = pg_query($con,$query);
+
+	closeConnection($con);
+
+	if($result){
+		return true;
+	}else{
+		return false;
+	}
+
+}
+
+
+
+//Créditos a:
+// https://github.com/romulo-soares/CRUDMySqlGenerico-PHP/blob/master/crudMySql.php
+
+//Baseado e adaptado;
 
 
 ?>

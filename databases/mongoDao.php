@@ -40,33 +40,33 @@ require("connectionMongo.php");
 $db = getConnectionMongo();
 
 //função genérica para inserir um documento qualquer em uma coleção qualquer
-function inserir($nomeColecao,$documento){
+function inserirMDB($nomeColecao,$documento){
 	global $db;
 	$db->$nomeColecao->insertOne($documento);	
 }
 
 //função genérica para buscar um único documento do banco
-function  buscar($nomeColecao,$documento){
+function  buscarMDB($nomeColecao,$documento){
 	global $db;
 	return $db->$nomeColecao->findOne($documento);
 }
 
 //função genérica que lista todos os documentos de uma determinada coleção
-function listar($nomeColecao){
+function listarMDB($nomeColecao){
 	global $db;
 	return $db->$nomeColecao->find();
 }
 
 //função genérica que lista todos os documentos que atendem a uma 
 //determianda condição
-function buscarPorCondicao($nomeColecao,$condicao){
+function buscarPorCondicaoMDB($nomeColecao,$condicao){
 	global $db;
 	return $db->$nomeColecao->find($condicao);
 }
 
 //função genérica para atualizar um ou vários documentos que atende a uma
 //determianda condição
-function atualizar($nomeColecao,$condicao,$atualizacao){
+function atualizarMDB($nomeColecao,$condicao,$atualizacao){
 	global $db;
 	$db->$nomeColecao->updateMany(
 		$condicao,
@@ -75,7 +75,7 @@ function atualizar($nomeColecao,$condicao,$atualizacao){
 }
 
 //função genérica para excluir um ou vários documentos que atendem a uma condição
-function remover($nomeColecao,$condicao){
+function removerMDB($nomeColecao,$condicao){
 	global $db;
 	$db->$nomeColecao->deleteMany($condicao);
 }
