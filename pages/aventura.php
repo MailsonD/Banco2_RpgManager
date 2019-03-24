@@ -10,8 +10,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/game.css" />
 </head>
 <body>
-<div class="card horizontal transparent chat">
-<div class="card-content grey darken-4 center-align">
+<div class="card horizontal transparent chat m12">
+<div class="card-content grey darken-4 center-align m3">
 <a class="waves-effect btn-small btn red darken-4" href="home.php">Sair</a>
 <br><hr>
 <a class="waves-effect btn-small btn red darken-4" href="">Ficha</a>
@@ -33,7 +33,22 @@
             
 
 <a class="waves-effect btn-small btn red darken-4" href="">Sortear</a>
-</div></div>
+</div>
+</div>
+
+<div class="row col12 m12"> 
+<div class="card-content grey darken-4 col6 m6">
+<div class="card-content white">
+</div>
+</div>
+</div>
+
+<div class="card-content grey darken-4 center-align m3">
+
+
+<a class="waves-effect btn-small btn red darken-4" href="">Ver mapa</a>
+
+</div>
 <script>
  $(document).ready(function(){
     $('select').formSelect();
