@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/materialize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
+    <?php
+    require("../controllers/sessionController.php");
+    ?>
 </head>
 <body>
 
@@ -24,7 +27,7 @@
         <div class="card-action center-align">
      
           <a class="waves-effect waves-light btn-small  red darken-4">Opções</a>
-          <a class="waves-effect waves-light btn-small red lighten-1">Sair</a>
+          <a href="../services/logout.php" class="waves-effect waves-light btn-small red lighten-1">Sair</a>
         </div>
       </div>
     </div>
