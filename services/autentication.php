@@ -7,12 +7,12 @@
 	$email = $_POST['email'];
 	$senha = $_POST['senha'];
 
-	$query = [
+	$document = [
 				'email'=>$email,
 				'senha'=>$senha,
 				];
 
-	$result = buscarMDB('usuario',$query);
+	$result = buscarMDB('usuario',$document);
 
 
 	if(!$result==null){
