@@ -5,8 +5,16 @@ body{
     background-color: #0c0c0c;
 
 }
+.painel{
+   margin-top: 100px;
+}
 .avatar{
     width: 150px;
+}
+.stroke{
+    top:0;
+    width: 100%;
+    position: absolute;
 }
 #modal4{
     background-image: url('../img/store.jpg');
