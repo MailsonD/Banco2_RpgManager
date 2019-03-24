@@ -9,7 +9,7 @@ require_once __DIR__ . "/../vendor/autoload.php";
 function getConnectionMongo(){
 
 	//teste é o nome do banco
-	$db = (new MongoDB\Client)->teste;
+	$db = (new MongoDB\Client)->RpgManager;
 
 	return $db;
 
