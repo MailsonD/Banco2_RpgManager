@@ -1,0 +1,10 @@
+body{
+    background-image: url('../img/table.jpg');
+    background-size: 100%;
+}
+
+.degrade{
+    width: 100%;
+    opacity: .6;
+    position: absolute;
+}
