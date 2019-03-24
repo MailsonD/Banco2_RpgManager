@@ -14,7 +14,7 @@
 
 	$result = buscarMDB('usuario',$query);
 
-	var_dump($result);
+
 	if(!$result==null){
 		header('location:pages/home.php'); 
 	}else{
