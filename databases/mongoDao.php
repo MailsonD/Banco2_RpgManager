@@ -42,7 +42,7 @@ $db = getConnectionMongo();
 //função genérica para inserir um documento qualquer em uma coleção qualquer
 function inserirMDB($nomeColecao,$documento){
 	global $db;
-	$db->$nomeColecao->insertOne($documento);	
+	return $db->$nomeColecao->insertOne($documento);	
 }
 
 //função genérica para buscar um único documento do banco
@@ -68,7 +68,7 @@ function buscarPorCondicaoMDB($nomeColecao,$condicao){
 //determianda condição
 function atualizarMDB($nomeColecao,$condicao,$atualizacao){
 	global $db;
-	$db->$nomeColecao->updateMany(
+	return $db->$nomeColecao->updateMany(
 		$condicao,
 		['$set' => $atualizacao]
 	);
@@ -77,7 +77,7 @@ function atualizarMDB($nomeColecao,$condicao,$atualizacao){
 //função genérica para excluir um ou vários documentos que atendem a uma condição
 function removerMDB($nomeColecao,$condicao){
 	global $db;
-	$db->$nomeColecao->deleteMany($condicao);
+	return $db->$nomeColecao->deleteMany($condicao);
 }
 
 
