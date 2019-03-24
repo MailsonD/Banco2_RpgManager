@@ -16,7 +16,8 @@
 
 
 	if(!$result==null){
-		header('location:pages/home.php'); 
+		$_SESSION['logado'] = $email;
+		header('location:../pages/home.php'); 
 	}else{
 		$_SESSION['msg'] = "Erro de autenticação";
 		header('location:../index.php'); 
