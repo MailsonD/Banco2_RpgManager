@@ -10,54 +10,68 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
 </head>
 <body>
+<img src="../assets/img/gradient.jpg" class="degrade">
 <div class="row">
     <div class="col s12 m2">
+
        
-      <div class="card center-align">
-        <div class="card-content">
-          <span class="card-title">Menu</span>
+      <div class="card  transparent"><img src="../assets/img/rpgLOGO.png" class="logo center-align">
+      
+       
+         
           
-        </div>
-        <div class="card-action">
-          <a class="waves-effect waves-light btn-large">Aventura</a><br><br>
-          <a class="waves-effect waves-light btn-large btn modal-trigger" href="#modal4">Loja</a>
+    
+        <div class="card-action center-align">
+          <a class="waves-effect waves-light btn-large red darken-4">Aventura</a><br><br>
+          <a class="waves-effect btn-large btn modal-trigger red darken-4" href="#modal4">Loja</a>
           <?php include("loja.php"); ?>
           <br>
         </div>
-        <div class="card-action">
+        <div class="card-action center-align">
      
-          <a class="waves-effect waves-light btn-small">Opções</a>
-          <a class="waves-effect waves-light btn-small">Sair</a>
+          <a class="waves-effect waves-light btn-small  red darken-4">Opções</a>
+          <a class="waves-effect waves-light btn-small red lighten-1">Sair</a>
         </div>
       </div>
     </div>
-    <div class="col s10 m5 ">
-      <div class="card center-align char">
+
+    <div id="test1" class="col s12 m6" > <?php include("personagens.php"); ?></div>
+    <div id="test4" class="col s12 m5">Test 4</div>
+    <div class="col s8 m4 ">
+      <div class="card center-align char grey darken-4">
        
             
         
         <div class="card-content">
             <img src='/assets/img/char.png' class="avatar">
-         <h5>Leoric</h5>
-         <p>King</p>
+         <h5 class="white-text">Leoric</h5>
+         <p class="white-text">King</p>
          <br>
 
-          <a class="btn-large waves-effect waves-light btn modal-trigger" href="#modal3">Inventário</a>
+          <a class="btn-large waves-effect waves-light btn modal-trigger  deep-orange darken-3" href="#modal3">Inventário</a>
           <?php include("inventario.php"); ?>
-          <a class="waves-effect waves-light btn-large">Ficha</a>
+          <a class="waves-effect waves-light btn-large btn modal-trigger  deep-orange darken-3" href="#ficha">Ficha</a>
+          <?php include("ficha.php"); ?>
 
         </div>
-        <div class="card-action">
-            
-
-        <a href="#">Trocar herói</a>
-        <a href="#">Editar herói</a>
-          <a href="#">Criar novo</a>
-        </div>
+        <ul class="tabs grey darken-4">
+        <li class="tab"><a href="#test1">Meus heróis</a></li>
+        <li class="tab"><a href="#test4">Criar novo</a></li>
+      </ul>
+         
       </div>
     </div>
+        
     
+
   </div>
+  
+
+  <div class="audio">
+  <audio controls autoplay on loop>
+  <source src="../assets/audio/audio.mp3" type="audio/mpeg">
+</audio>
+</div>
  
     
 <!--  Scripts-->
@@ -72,6 +86,11 @@
     $(document).ready(function () {
         $('.modal').modal();
     });
+</script>
+<script>
+    $(document).ready(function(){
+    $('.tabs').tabs();
+  });
 </script>
 </body>
 </html>
