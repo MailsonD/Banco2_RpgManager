@@ -13,7 +13,7 @@
 <img src="../assets/img/gradient.jpg" class="degrade">
 <div class="row">
     <div class="col s12 m2">       
-      <div class="card  transparent"><img src="../assets/img/rpgLOGO.png" class="logo center-align">
+      <div class="card  transparent"><a href="/pages/home.php"><img src="../assets/img/rpgLOGO.png" class="logo center-align"></a>
          <div class="card-action center-align">
           <a class="waves-effect waves-light btn-large red darken-4">Aventura</a><br><br>
           <a class="waves-effect btn-large btn modal-trigger red darken-4" href="#modal4" id="store">Loja</a>
