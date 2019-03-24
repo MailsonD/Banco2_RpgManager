@@ -11,6 +11,9 @@
 </head>
 <body>
 <img src="../assets/img/gradient.jpg" class="degrade">
+<img src="../assets/img/header.png" class="stroke">
+<div class="card transparent chat">
+<div class="card-content grey darken-4">oi</div></div>
 
 </body>
 </html>

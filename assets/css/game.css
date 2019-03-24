@@ -1,10 +1,18 @@
 body{
     background-image: url('../img/table.jpg');
     background-size: 100%;
-}
 
+}
+.stroke{
+    top:0;
+    width: 100%;
+    position: absolute;
+}
 .degrade{
     width: 100%;
-    opacity: .6;
+    opacity: .7;
     position: absolute;
+}
+.chat{
+    top:50px;
 }
