@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/materialize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/style.css" />
+    <?php
+    require("../controllers/sessionController.php");
+    ?>
 </head>
 <body>
 <img src="../assets/img/gradient.jpg" class="degrade">
