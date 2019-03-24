@@ -13,13 +13,31 @@
 <div class="card horizontal transparent chat">
 <div class="card-content grey darken-4 center-align">
 <a class="waves-effect btn-small btn red darken-4" href="home.php">Sair</a>
-<br><hr><br>
+<br><hr>
 <a class="waves-effect btn-small btn red darken-4" href="">Ficha</a>
 <br><br><p class="white-text">Jogadores <br> conectados: </p><br>
 <p class="white-text">Tauriel</p><br>
 <p class="white-text">Erzeal</p><br>
 <p class="white-text">Kvothe</p><br>
-</div></div>
+<p class="white-text">Binnie</p><br><hr><br>
+<div class="input-field col4 m4">
+    
+   
 
+  <select class="browser-default">
+    <option value="" disabled selected>Dado</option>
+    <option value="1">D6</option>
+    <option value="2">D8</option>
+    <option value="3">D10</option>
+  </select> <br>
+            
+
+<a class="waves-effect btn-small btn red darken-4" href="">Sortear</a>
+</div></div>
+<script>
+ $(document).ready(function(){
+    $('select').formSelect();
+  });
+</script>
 </body>
 </html>
