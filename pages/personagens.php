@@ -6,7 +6,7 @@
           <p>Aqui vou listar os personagens </p>
         </div>
         <div class="card-action">
-        <a href="#">Escolher</a>
+        <a class="waves-effect waves-light btn-small red darken-4" href="#">Escolher</a>
           <a href="#">Editar</a>
           <a href="#">Deletar</a>
         </div>

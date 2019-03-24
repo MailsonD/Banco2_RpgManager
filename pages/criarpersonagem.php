@@ -35,7 +35,7 @@
                                  
                                  
                             </form>
-                            <button class="btn waves-effect waves-light" type="submit" name="action">Criar
+                            <button class="waves-effect waves-light btn-large red darken-4" type="submit" name="action">Criar
   </button>
          
       </div>
