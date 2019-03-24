@@ -46,7 +46,10 @@
 <div class="card-content grey darken-4 center-align m3">
 
 
-<a class="waves-effect btn-small btn red darken-4" href="">Ver mapa</a>
+<a class="waves-effect btn-small btn red darken-4" href="">Mapa</a>
+<br>
+<div class="player">
+<img src="../assets/img/char.png" class="circle icon" ><br><p class="white-text">Leoric</p></div>
 
 </div>
 <script>
