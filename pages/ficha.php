@@ -1,5 +1,5 @@
 <div id="ficha" class="modal">
-    <h4>Nome:</h4>
+    <h4>Leoric</h4>
     <h5>Clã/Raça</h5>
    
     <p>Idade</p>

@@ -8,6 +8,10 @@ body{
 .avatar{
     width: 150px;
 }
+#ficha{
+    background-image: url('../img/texture.jpg');
+    border: none/
+}
 .degrade{
     width: 100%;
     opacity: .6;
