@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
     <?php
-    session_start();
+        require("controllers/sessionControllerLogged.php");
     ?>
 </head>
 <body>
