@@ -21,10 +21,7 @@ hr {
 .icon{width: 80px;
 
 }
-.batepapo{
-    background-image: url('/assets/img/chat.png');
- 
-}
+.chat{top:30px;}
 body{
     background-color: #212121 ;
 }
