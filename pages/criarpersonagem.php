@@ -18,14 +18,13 @@
             <input id="naturalidade" type="text" name="naturalidade" class="validate white-text"  required>
             <label for="naturalidade">Naturalidade</label>
         </div>
-        <div class="input-field col10 s10">
-            <select class="validate white-text" required name="Divindade">
-                <option class="white-text" value="Odin" selected="true">Odin</option>
-                <option class="white-text" value="Freya">Freya</option>
-                <option class="white-text" value="Ymir">Ymir</option>
-                <option class="white-text" value="Camila">Camila</option>
+        <div class="input-field col10 s10 white-text">
+            <select class="validate browser-default" required name="Divindade">
+                <option value="Odin" selected="true">Odin</option>
+                <option value="Freya">Freya</option>
+                <option value="Ymir">Ymir</option>
+                <option value="Camila">Camila</option>
             </select>
-            <label>Adoração</label>
         </div>
 
         <h6>Atributos <div class="pontos"><p class="yellow-text">20</p></div></h6> 
