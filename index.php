@@ -22,7 +22,7 @@
         <div class="row center">
 
             <!-- Modal Trigger -->
-            <a class="btn-large waves-effect waves-light orange accent-4 btn modal-trigger" href="#modal2">Torne-se herói!</a> <p class="white-text">ou</p>  <a class="waves-effect waves-light btn modal-trigger transparent" href="#modal1">Continue a jornada</a>
+            <a class="btn-large waves-effect waves-light orange accent-4 btn modal-trigger" href="#modal2">Torne-se herói!</a> <p class="white-text">ou</p>  <a class="waves-effect waves-light btn modal-trigger red" href="#modal1">Continue a jornada</a>
 
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
