@@ -19,6 +19,7 @@
             <label for="naturalidade">Naturalidade</label>
         </div>
         <div class="input-field col10 s10 white-text">
+            <p>Adoração</p>
             <select class="validate browser-default" required name="Divindade">
                 <option value="Odin" selected="true">Odin</option>
                 <option value="Freya">Freya</option>

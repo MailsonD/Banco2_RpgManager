@@ -6,7 +6,8 @@
           <span class="card-title">Leoric</span>
          
         </div>
-        <div class="card-action"> <p>Aqui vou listar os personagens </p>
+        <div class="card-action"> <p>Raça</p><p>Naturalidade<p><p>Adoração</p>
+       <hr><br><br>
         <a class="waves-effect waves-light btn-small red darken-4" href="#">Escolher</a>
           <a href="#">Editar</a>
           <a href="#">Deletar</a>
