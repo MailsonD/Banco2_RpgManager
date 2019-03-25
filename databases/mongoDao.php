@@ -80,7 +80,7 @@ function adicionarAtributoMDB($nomeColecao,$condicao,$documento){
 	global $db;
 	return $db->$nomeColecao->updateMany(
 		$condicao,
-		['$addToSet' => $atualizacao]
+		['$push' => $atualizacao]
 	);
 }
 

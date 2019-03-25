@@ -1,7 +1,7 @@
    <div class="card grey darken-4 white-text center-align">
     <div class="card-content">
         <h6>Dados do personagem</h6>
-        <form>
+        <form method="POST" action="../services/criarPersonagem.php">
 
 
            <div class="input-field col10 s10">
@@ -41,10 +41,10 @@
     </div>
 
 
-
-</form>
 <button class="waves-effect waves-light btn-large red darken-4" type="submit" name="action">Criar
 </button>
+</form>
+
 
 </div>
 
