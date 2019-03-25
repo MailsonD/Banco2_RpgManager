@@ -18,7 +18,7 @@
                                         <input id="vocacao" type="text" class="validate" >
                                         <label for="vocacao">Vocação</label></div>
                                    
-                                        <h6>Atributos</h6>
+                                        <h6>Atributos</h6> <div class="pontos"><p class="yellow-text">20</p></div>
          <form class="col s10"> 
          <div class="row">
          <div class="input-field col s5">
@@ -31,10 +31,12 @@
          </form>
     
         </div>
+
                                  
                                  
                                  
                             </form>
+                            
                             <button class="waves-effect waves-light btn-large red darken-4" type="submit" name="action">Criar
   </button>
          
