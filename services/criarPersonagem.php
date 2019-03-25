@@ -26,6 +26,7 @@ $condicao = [
 				'email'=>$emailLogado,
 			];
 
-$result = atualizarMDB('usuario',$condicao,$document);				
+$result = adicionarAtributoMDB('usuario',$condicao,$document);				
 
 ?>
+
