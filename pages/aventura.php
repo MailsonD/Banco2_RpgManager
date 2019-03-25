@@ -16,7 +16,9 @@
 <div class="card-content grey darken-4 center-align m3">
 <a class="waves-effect btn-small btn red darken-4" href="/pages/home.php">Sair</a>
 <br><hr>
-<a class="waves-effect btn-small btn red darken-4" href="">Ficha</a>
+<a class="waves-effect waves-light btn-small red darken-4 modal-trigger " href="#ficha">Ficha</a>
+          <?php include("ficha.php"); ?>
+
 <br><br><p class="white-text">Jogadores <br> conectados: </p><br>
 <p class="white-text">Tauriel</p><br>
 <p class="white-text">Erzeal</p><br>
