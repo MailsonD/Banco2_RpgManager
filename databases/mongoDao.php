@@ -74,6 +74,16 @@ function atualizarMDB($nomeColecao,$condicao,$atualizacao){
 	);
 }
 
+//função genérica para adicionar atributos a um documento que atende a uma
+//determianda condição
+function adicionarAtributo($nomeColecao,$condicao,$documento){
+	global $db;
+	return $db->$nomeColecao->updateMany(
+		$condicao,
+		['$addToSet' => $atualizacao]
+	);
+}
+
 //função genérica para excluir um ou vários documentos que atendem a uma condição
 function removerMDB($nomeColecao,$condicao){
 	global $db;
