@@ -43,7 +43,7 @@
   <?php include("chat.php"); ?>
 
 </div>
-
+</div>
 <div class="card-content grey darken-4 center-align m3">
 
 

@@ -5,18 +5,21 @@
           <span class="card-title">Chat</span>
           <div class="card grey darken-3 white-text center-align">
               <br><br>
-          </div>
-        </div>
-        <div class="card-action mensagem">
-        <div class="input-field m12">
-          <input placeholder="Escreva sua mensagem..." id="first_name" type="text" class="validate">
+          </div> 
 
-  <a class="btn-floating btn-small red"><i class="material-icons">add</i></a>
-        
+                            <div class="input-field">
+                                <input id="comentario" type="text" name="comentario">
+                                <label for="comentario">Escreva sua mensagem...</label> <button class="btn-floating waves-effect waves-light red" type="submit" name="action"><i
+                                    class="material-icons right">chat</i>
+                            </button>
 
-        </div> 
-            
-        </div>
-      </div>
-   
+                            </div>
+
+                        </div>
+                       
+                           
+                    
+       
+       
+ 
  
