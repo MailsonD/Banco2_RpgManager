@@ -29,10 +29,11 @@
                                         <label for="destreza">Destreza</label></div>
                                         </div>
          </form>
-    
-        </div>
+      
 
-                                 
+               
+        </div>
+                     
                                  
                                  
                             </form>
