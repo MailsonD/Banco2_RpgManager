@@ -68,7 +68,7 @@ function buscarPorCondicaoMDB($nomeColecao,$condicao){
 //determianda condição
 function atualizarMDB($nomeColecao,$condicao,$atualizacao){
 	global $db;
-	return $db->$nomeColecao->updateMany(
+	return $db->$nomeColecao->updateOne(
 		$condicao,
 		['$set' => $atualizacao]
 	);
