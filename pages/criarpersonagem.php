@@ -6,7 +6,8 @@
         <form method="POST" action="../services/criarPersonagem.php">
 
     <img src="/assets/img/char2.png" class="avatar"><br>
-    <a class="waves-effect btn-small btn modal-trigger red darken-4">Avatar</a>
+    <a class="waves-effect btn-small btn modal-trigger red darken-4" href="#avatar">Avatar</a>
+    <?php include("avatars.php"); ?>
          <div class="input-field col10 s10">
             <input id="name" type="text" name="nome" class="validate white-text" maxlength="40" required>
             <label for="name">Nome</label>
