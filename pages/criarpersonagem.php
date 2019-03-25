@@ -1,10 +1,12 @@
    <div class="card grey darken-4 white-text center-align">
+   <hr>
     <div class="card-content">
         <h6>Dados do personagem</h6>
-
+<br>
         <form method="POST" action="../services/criarPersonagem.php">
 
-
+    <img src="/assets/img/char2.png" class="avatar"><br>
+    <a class="waves-effect btn-small btn modal-trigger red darken-4">Avatar</a>
          <div class="input-field col10 s10">
             <input id="name" type="text" name="nome" class="validate white-text" maxlength="40" required>
             <label for="name">Nome</label>
