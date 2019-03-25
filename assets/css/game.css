@@ -13,10 +13,16 @@ hr {
     
     
 }
+.mensagem{
+    position: absolute;
+    bottom: 10px;
+
+}
 .icon{width: 80px;
 
 }
 .batepapo{
+    background-image: url('/assets/img/chat.png');
  
 }
 body{

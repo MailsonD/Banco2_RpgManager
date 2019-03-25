@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/materialize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/game.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 <body>
 <div class="card horizontal transparent chat m12">
@@ -36,13 +38,10 @@
 </div>
 </div>
 
-<div class="row col12 m12"> 
-<div class="card-content white batepapo">
-<div class="card-content white">
-   <p> oi</p> <hr>
+<div class="row"> 
+ 
+  <?php include("chat.php"); ?>
 
-</div>
-</div>
 </div>
 
 <div class="card-content grey darken-4 center-align m3">
