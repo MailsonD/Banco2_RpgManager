@@ -1,6 +1,7 @@
    <div class="card grey darken-4 white-text center-align">
     <div class="card-content">
         <h6>Dados do personagem</h6>
+
         <form method="POST" action="../services/criarPersonagem.php">
 
 
@@ -27,7 +28,7 @@
             <label>Adoração</label>
         </div>
 
-        <h6>Atributos</h6> 
+        <h6>Atributos <div class="pontos"><p class="yellow-text">20</p></div></h6> 
         <div class="row">
          <div class="input-field col s5">
             <input id="forca" type="number" class="validate white-text" min="0">
