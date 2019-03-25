@@ -83,6 +83,7 @@
 <script>
     $(document).ready(function () {
         $('.modal').modal();
+        $('select').formSelect();
     });
 </script>
 <script>
