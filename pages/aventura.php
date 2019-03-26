@@ -36,7 +36,7 @@
   </select> <br>
             
 
-<a class="waves-effect btn-small btn red darken-4" href="">Sortear</a>
+<a class="waves-effect btn-small btn red darken-4" href="" id="sortear">Sortear</a>
 </div>
 </div>
 
@@ -55,6 +55,16 @@
 <img src="../assets/img/char.png" class="circle icon" ><br><p class="white-text">Leoric</p></div>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../assets/js/materialize.js"></script>
+    <script src="../assets/js/materialize.min.js"></script>
+
+    <script src="../assets/js/dado.js"></script>
+
+<script src="../assets/js/init.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
 <script>
  $(document).ready(function(){
     $('select').formSelect();

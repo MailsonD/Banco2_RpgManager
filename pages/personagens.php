@@ -1,5 +1,5 @@
 
-    <?php include("../services/listarpersonagens.php"); ?>
+<?php include("../services/listarpersonagens.php"); ?>
 <div class="card-content">
         <img src='/assets/img/char.png' class="avatar">
           <span class="card-title"><?php echo $nome ?></span>
