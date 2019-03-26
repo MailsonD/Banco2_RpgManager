@@ -84,7 +84,7 @@
     $(document).ready(function () {
         $('.modal').modal();
         $('select').formSelect();
-        <?php include("services/msgErro.php")?>
+        <?php include("../services/msgErro.php")?>
     });
 </script>
 <script>

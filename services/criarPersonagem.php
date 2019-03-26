@@ -19,7 +19,6 @@ $condicao = [
 $result;
 
 if(buscarMDB('usuario',$condicao)['personagens'] == null){
-	echo "setando";
 	$document = [
 		'personagens'=>[
 			[
@@ -35,7 +34,6 @@ if(buscarMDB('usuario',$condicao)['personagens'] == null){
 	$result = atualizarMDB('usuario',$condicao,$document);					
 
 }else{
-	echo "adicionando";
 	
 	$document = [
 		'personagens'=>[
@@ -58,7 +56,7 @@ if($result ->isAcknowledged()){
 	$_SESSION['msg'] = "Deu pau no cadastro de personagem!";
 }
 
-//header('location:../pages/home.php'); 
+header('location:../pages/home.php'); 
 
 ?>
 
