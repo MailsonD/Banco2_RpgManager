@@ -91,6 +91,7 @@
     $('.tabs').tabs();
   });
 </script>
+<script src="../assets/js/selecionaFoto.js"></script>
 
 
 </body>

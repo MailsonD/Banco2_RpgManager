@@ -5,7 +5,7 @@
 <br>
         <form method="POST" action="../services/criarPersonagem.php">
 
-    <img src="/assets/img/char2.png" class="avatar"><br>
+    <img id="avatarSelecionado" src="/assets/img/char2.png" class="avatar"><br>
     <a class="waves-effect btn-small btn modal-trigger red darken-4" href="#avatar">Avatar</a>
     <?php include("avatars.php"); ?>
          <div class="input-field col10 s10">
