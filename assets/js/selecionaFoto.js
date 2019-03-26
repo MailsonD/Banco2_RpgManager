@@ -4,7 +4,7 @@ function escolherFoto(){
 	for (var i = 0; i < radios.length; i++) {
         if (radios[i].checked) {
             $("#avatarSelecionado").attr("src",'/assets/img/'+radios[i].value+'');
-            console.log(radios[i].value);
+            $("#avatarForm").val(radios[i].value);
         }
     }
 }
