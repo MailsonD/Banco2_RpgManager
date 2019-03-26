@@ -10,6 +10,7 @@ $nome = $_POST['nome'];
 $raca = $_POST['raca'];
 $naturalidade  = $_POST['naturalidade'];
 $adoracao = $_POST['adoracao'];
+$avatar = $_POST['avatar'];
 
 $condicao = [
 	'email'=>$emailLogado,
@@ -26,6 +27,7 @@ if(buscarMDB('usuario',$condicao)['personagens'] == null){
 				'raca'=>$raca,
 				'naturalidade'=>$naturalidade,
 				'adoracao'=>$adoracao,
+				'avatar'=>$avatar,
 			],
 		],	
 	];
@@ -41,6 +43,7 @@ if(buscarMDB('usuario',$condicao)['personagens'] == null){
 			'raca'=>$raca,
 			'naturalidade'=>$naturalidade,
 			'adoracao'=>$adoracao,
+			'avatar'=>$avatar,
 		],	
 	];
 
