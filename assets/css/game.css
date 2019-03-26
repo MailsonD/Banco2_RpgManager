@@ -28,3 +28,7 @@ body{
 .avatares{
     width:100px;
 }
+#fichaGame{
+    background-image: url('../img/texture.jpg');
+
+}

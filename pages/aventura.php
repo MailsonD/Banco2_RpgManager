@@ -16,8 +16,8 @@
 <div class="card-content grey darken-4 center-align m3">
 <a class="waves-effect btn-small btn red darken-4" href="/pages/home.php">Sair</a>
 <br><hr>
-<a class="waves-effect waves-light btn-small red darken-4 modal-trigger " href="#ficha">Ficha</a>
-          <?php include("ficha.php"); ?>
+<a class="waves-effect waves-light btn-small red darken-4 modal-trigger " href="#fichaGame">Ficha</a>
+          <?php include("fichaGame.php"); ?>
 
 <br><br><p class="white-text">Jogadores <br> conectados: </p><br>
 <p class="white-text">Tauriel</p><br>
@@ -43,6 +43,9 @@
 <div class="row"> 
  
   <?php include("chat.php"); ?>
+  
+
+</div>
 
 </div>
 </div>
@@ -69,6 +72,13 @@
  $(document).ready(function(){
     $('select').formSelect();
   });
+</script>
+<script>
+    $(document).ready(function () {
+        $('.modal').modal();
+        $('select').formSelect();
+        <?php include("../services/msgErro.php")?>
+    });
 </script>
 </body>
 </html>
