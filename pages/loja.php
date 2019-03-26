@@ -9,45 +9,45 @@
     <div class="card-content">
       <img src="../assets/img/potion.png" class="item" alt="">
       <div class="card-action">
-      <span class="title">Item 1</span>
-      <p>Descrição <br>
-        Desrição 2
+      <span class="title"><b>Poção de vida</b></span>
+      <p>Aumenta a vida em +20<br>
+        <a href="">Comprar</a>
+      </p></div></div></div>
+
+     <div class="card col s4 m3">
+    <div class="card-content">
+      <img src="../assets/img/potion2.png" class="item" alt="">
+      <div class="card-action">
+      <span class="title"><b>Poção de mana</b></span>
+      <p>Aumenta a magia em +20<br>
+        <a href="">Comprar</a>
       </p></div></div></div>
 
       <div class="card col s4 m3">
     <div class="card-content">
-      <img src="../assets/img/potion.png" class="item" alt="">
+      <img src="../assets/img/item3.png" class="item" alt="">
       <div class="card-action">
-      <span class="title">Item 1</span>
-      <p>Descrição <br>
-        Desrição 2
+      <span class="title"><b>Botas</b></span>
+      <p>Aumenta a velocidade em +20<br>
+        <a href="">Comprar</a>
       </p></div></div></div>
 
        <div class="card col s4 m3">
     <div class="card-content">
-      <img src="../assets/img/potion.png" class="item" alt="">
+      <img src="../assets/img/item4.png" class="item" alt="">
       <div class="card-action">
-      <span class="title">Item 1</span>
-      <p>Descrição <br>
-        Desrição 2
-      </p></div></div></div>
-
-       <div class="card col s4 m3">
-    <div class="card-content">
-      <img src="../assets/img/potion.png" class="item" alt="">
-      <div class="card-action">
-      <span class="title">Item 1</span>
-      <p>Descrição <br>
-        Desrição 2
+      <span class="title"><b>Armadura</b></span>
+      <p>Aumenta a resistência em +20<br>
+        <a href="">Comprar</a>
       </p></div></div></div>
 
       <div class="card col s4 m3">
     <div class="card-content">
-      <img src="../assets/img/potion.png" class="item" alt="">
+      <img src="../assets/img/item5.png" class="item" alt="">
       <div class="card-action">
-      <span class="title">Item 1</span>
-      <p>Descrição <br>
-        Desrição 2
+      <span class="title"><b>Escudo paladino</b></span>
+      <p>Aumenta a defesa em +20<br>
+        <a href="">Comprar</a>
       </p></div></div></div>
    
 </div>
