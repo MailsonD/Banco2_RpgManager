@@ -32,7 +32,7 @@
       </div>
     </div>
 
-    <div id="test1" class="col s12 m6 painel" > <?php include("personagens.php"); ?></div>
+    <div id="test1" class="col s12 m6 painel" > <?php include("listarpersonagens.php"); ?></div>
     <div id="test4" class="col s12 m6 painel"><?php include("criarpersonagem.php"); ?></div>
     <div class="col s7 m4 painel">
       <div class="card center-align char transparent">
