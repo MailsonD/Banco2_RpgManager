@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/materialize.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/home.css" />
     <?php
         require("controllers/sessionControllerLogged.php");
     ?>
@@ -15,9 +17,9 @@
 <body>
     <div class="container">
         <br><br>
-        <h1 class="header center white-text">RPG</h1>
+        <h1 class="header center white-text"><img src="assets/img/rpgLOGO.png" class="logoHome"></h1>
         <div class="row center">
-            <h5 class="header col s12 light white-text">Junte-se à aventura!</h5>
+            <h5 class="header col s12 light white-text"><b>Junte-se à aventura!</b></h5>
         </div>
         <div class="row center">
 
