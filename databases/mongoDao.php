@@ -76,7 +76,7 @@ function atualizarMDB($nomeColecao,$condicao,$atualizacao){
 
 //função genérica para adicionar atributos a um documento que atende a uma
 //determianda condição
-function adicionarAtributoMDB($nomeColecao,$condicao,$documento){
+function adicionarAtributoMDB($nomeColecao,$condicao,$atualizacao){
 	global $db;
 	return $db->$nomeColecao->updateMany(
 		$condicao,
