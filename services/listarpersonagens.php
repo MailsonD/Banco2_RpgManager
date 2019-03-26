@@ -6,11 +6,14 @@ session_start();
 
 $emailLogado = $_SESSION['logado'];
 
-foreach($result as $document){            
+
+
+foreach(listarMDB('personagens') as $document){            
     $nome = $document['nome'];
     $raca = $document['raca'];
     $naturalidade  = $document['naturalidade'];
-    $adoracao = $document['adoracao'];	
+    $adoracao = $document['adoracao'];
+    $avatar = $document['avatar'];	
 }
 ?>
 
