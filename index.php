@@ -15,16 +15,17 @@
     ?>
 </head>
 <body>
+<img src="assets/img/dust.gif" class="dust">
     <div class="container">
         <br><br>
         <h1 class="header center white-text"><img src="assets/img/rpgLOGO.png" class="logoHome"></h1>
         <div class="row center">
-            <h5 class="header col s12 light white-text"><b>Junte-se à aventura!</b></h5>
+            <h5 class="header col s12 light white-text sub"><b>Junte-se à aventura!</b></h5>
         </div>
         <div class="row center">
 
             <!-- Modal Trigger -->
-            <a class="btn-large waves-effect waves-light orange accent-4 btn modal-trigger" href="#modal2">Torne-se herói!</a> <p class="white-text">ou</p>  <a class="waves-effect waves-light btn modal-trigger red" href="#modal1">Continue a jornada</a>
+            <a class="btn-large waves-effect waves-light orange accent-4 btn modal-trigger" href="#modal2">Torne-se herói!</a> <p class="white-text sub">ou</p>  <a class="waves-effect waves-light btn modal-trigger red" href="#modal1">Continue a jornada</a>
 
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
