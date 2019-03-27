@@ -1,8 +1,8 @@
 
     
-    <div class="card horizontal grey darken-4 white-text center-align" action="../services/listarpersonagens.php">
+    <div class="card horizontal grey darken-4 white-text center-align">
       
-    <?php include("personagens.php"); ?>
-      </div>
+    <?php include("../services/listarpersonagens.php"); ?>
+     </div>
    
  
