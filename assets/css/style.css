@@ -7,10 +7,10 @@ body{
 }
 
 .degrade2{
-    /*background-image: linear-gradient(red, yellow);*/
      background-image: linear-gradient(rgb(0,0,0,0.5), rgba(40,40,40,0.4));
      background-repeat: no-repeat;
      background-size: cover;
+     height: 100%;
 }
 
 
