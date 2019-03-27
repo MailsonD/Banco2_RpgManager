@@ -20,12 +20,12 @@
       </div>
 
       <div class="input-field col10 s10">
-        <input id="naturalidade" type="text" name="naturalidade" class="validate white-text"  required>
+        <input id="naturalidade" type="text" name="classe" class="validate white-text"  required>
         <label for="classe">Classe</label>
       </div>
       <div class="input-field col10 s10 white-text">
         <p>Adoração</p>
-        <select class="validate browser-default" required name="Divindade">
+        <select class="validate browser-default" required name="adoracao">
           <option value="Odin" selected="true">Odin</option>
           <option value="Freya">Freya</option>
           <option value="Ymir">Ymir</option>
