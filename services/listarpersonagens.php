@@ -6,14 +6,33 @@ session_start();
 
 $emailLogado = $_SESSION['logado'];
 
+$condicao = [
+	'email'=>$emailLogado,	
+];
 
 
-foreach(listarMDB('personagens') as $document){            
-    $nome = $document['nome'];
-    $raca = $document['raca'];
-    $naturalidade  = $document['naturalidade'];
-    $adoracao = $document['adoracao'];
-    $avatar = $document['avatar'];	
+$result = buscarMDB('usuario',$condicao); 
+
+$personagens = $result['personagens'];
+
+foreach($personagens as $document){            
+
+	?>
+	<div class="card-content">
+		<img src=<?php echo '/assets/img/'.$document['avatar'].''; ?> class="avatar">
+		<span class="card-title"><?php echo $document['nome']; ?></span>
+
+	</div>
+	<div class="card-action"> <p><?php echo $document['raca']; ?></p><p><?php echo $document['classe']; ?><p><p><?php echo $document['adoracao']; ?></p>
+		<hr><br><br>
+		<a class="waves-effect waves-light btn-small red darken-4" href="#">Escolher</a>
+
+	</div>
+
+
+	<?php
+
+
 }
 ?>
 
