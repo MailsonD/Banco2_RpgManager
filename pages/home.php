@@ -13,8 +13,9 @@
     ?>
 </head>
 <body>
-
-<img src="../assets/img/gradient.jpg" class="degrade"><img src="../assets/img/header.png" class="stroke">
+<div class="degrade2">
+<!-- <img src="../assets/img/gradient.jpg" class="degrade"> -->
+<img src="../assets/img/header.png" class="stroke">
 <div class="row">
     <div class="col s12 m2 painel">       
       <div class="card  transparent"><a href="/pages/home.php"><img src="../assets/img/rpgLOGO.png" class="logo center-align"></a>
@@ -70,7 +71,7 @@
   <source src="../assets/audio/audio.mp3" type="audio/mpeg">
 </audio>
 </div>
- 
+ </div>
     
 <!--  Scripts-->
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
