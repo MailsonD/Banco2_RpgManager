@@ -18,7 +18,7 @@ $personagens = $result['personagens'];
 foreach($personagens as $document){            
 
 	?>
-	<div class="col s4">
+	<div class="card horizontal grey darken-4 white-text center-align">
 		<div class="card-content">
 		<img src=<?php echo '/assets/img/'.$document['avatar'].''; ?> class="avatar">
 		<span class="card-title"><?php echo $document['nome']; ?></span>
@@ -30,8 +30,8 @@ foreach($personagens as $document){
 		<hr><br><br>
 		<a class="waves-effect waves-light btn-small red darken-4" href=<?php echo'../services/escolherPersonagem.php?nomePersonagem='.$document['nome'].'' ;?>>Escolher</a>
 
-	</div>
-	</div>
+	
+	</div></div>
 
 
 	<?php

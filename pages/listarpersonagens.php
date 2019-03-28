@@ -1,8 +1,14 @@
 
 
-<div class="card horizontal grey darken-4 white-text center-align">
-	<div class="row">
+<div class="col s6">
+    
+    
+      
+        <div class="card-content">
 		<?php include("../services/listarpersonagens.php"); ?>
-	</div>
-</div>
+        </div>
+       
+     
+  </div>
+            
 
