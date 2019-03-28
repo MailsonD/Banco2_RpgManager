@@ -6,23 +6,35 @@ session_start();
 
 $emailLogado = $_SESSION['logado'];
 
-$nome = $_POST['nome'];
+$nomePersonagem = $_POST['nome'];
 $raca = $_POST['raca'];
 $classe  = $_POST['classe'];
 $adoracao = $_POST['adoracao'];
 $avatar = $_POST['avatar'];
 
 $condicao = [
-	'email'=>$emailLogado,
+	'email'=>$emailLogado,	
 ];
 
-$result;
+
+$result = buscarMDB('usuario',$condicao); 
+
+$personagens = $result['personagens'];
+
+foreach ($personagens as $personagem) {
+	if($nomePersonagem == $personagem['nome'] ){
+		$_SESSION['msg'] = "Já existe um personagem com este nome!";
+		header('location:../pages/home.php');
+		exit(); 
+	}		
+}
+
 
 if(buscarMDB('usuario',$condicao)['personagens'] == null){
 	$document = [
 		'personagens'=>[
 			[
-				'nome'=>$nome,
+				'nome'=>$nomePersonagem,
 				'raca'=>$raca,
 				'classe'=>$classe,
 				'adoracao'=>$adoracao,
@@ -37,7 +49,7 @@ if(buscarMDB('usuario',$condicao)['personagens'] == null){
 	
 	$document = [
 		'personagens'=>[
-			'nome'=>$nome,
+			'nome'=>$nomePersonagem,
 			'raca'=>$raca,
 			'classe'=>$classe,
 			'adoracao'=>$adoracao,
