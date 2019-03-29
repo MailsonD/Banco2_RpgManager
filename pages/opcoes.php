@@ -35,12 +35,16 @@
 
 
                 <div class=" card-tabs grey darken-4">
-                    <ul class="tabs tabs-fixed-width">
+                    <ul class="tabs tabs-fixed-width transparent red-text">
                         <li class="tab"><a href="#dados">Meus dados <i class="small material-icons">person</i></a></li>
                         <li class="tab"><a href="#settings">Editar dados<i
                                 class="small material-icons">settings</i></a>
                         </li>
                     </ul>
+                    <div class="card-action center-align">
+
+          <a href="home.php" class="waves-effect waves-light btn-small  red darken-4">Voltar</a>
+        </div>
                 </div>
                 <div class="card-content grey darken-4">
                     <div id="dados">
@@ -73,7 +77,7 @@
                                 </div>
 
 
-                                <button class="btn waves-effect waves-light" type="submit" name="action">Cadastrar
+                                <button class="btn waves-effect waves-light red" type="submit" name="action">Cadastrar
                                 </button>
                             </div>
                         </form>
