@@ -25,7 +25,7 @@
         <div class="row center">
 
             <!-- Modal Trigger -->
-            <a class="btn-large waves-effect waves-light orange accent-4 btn modal-trigger" href="#modal2">Torne-se herói!</a> <p class="white-text sub">ou</p>  <a class="waves-effect waves-light btn modal-trigger red" href="#modal1">Continue a jornada</a>
+            <a class="btn-large waves-effect waves-light orange accent-4 btn modal-trigger" href="#modal2">Torne-se herói!</a> <p class="white-text sub">ou</p>  <a class="waves-effect waves-light btn modal-trigger red" href="#modal1" onclick="play()">Continue a jornada</a>
 
             <!-- Modal Structure -->
             <div id="modal1" class="modal">
@@ -116,6 +116,13 @@
         <?php include("services/msgErro.php")?>
     });
 </script>
+<audio id="botaologin" src="assets/audio/logar.mp3" ></audio>
+<script>
+  function play(){
+       var audio = document.getElementById("botaologin");
+       audio.play();
+                 }
+   </script>
 
 </body>
 
