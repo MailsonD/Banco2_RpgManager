@@ -11,6 +11,15 @@ $raca = $_POST['raca'];
 $classe  = $_POST['classe'];
 $adoracao = $_POST['adoracao'];
 $avatar = $_POST['avatar'];
+$atributos = 
+[
+	'forca'=>$_POST['forca'],			
+	'destreza'=>$_POST['destreza'],			
+	'inteligencia'=>$_POST['inteligencia'],			
+	'costituicao'=>$_POST['contituicao'],			
+	'sorte'=>$_POST['sorte'],			
+	'carisma'=>$_POST['carisma'],			
+];
 
 $condicao = [
 	'email'=>$emailLogado,	
@@ -39,6 +48,7 @@ if(buscarMDB('usuario',$condicao)['personagens'] == null){
 				'classe'=>$classe,
 				'adoracao'=>$adoracao,
 				'avatar'=>$avatar,
+				'atributos'=>$atributos,
 			],
 		],	
 	];
@@ -54,6 +64,7 @@ if(buscarMDB('usuario',$condicao)['personagens'] == null){
 			'classe'=>$classe,
 			'adoracao'=>$adoracao,
 			'avatar'=>$avatar,
+			'atributos'=>$atributos,
 		],	
 	];
 

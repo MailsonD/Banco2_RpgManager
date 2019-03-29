@@ -1,4 +1,3 @@
-var total;
 
 function atualizarAtributos(){
 	let atrforca = Number(forca.value);
@@ -8,7 +7,7 @@ function atualizarAtributos(){
 	let atrsorte = Number(sorte.value);
 	let atrcarisma = Number(carisma.value);
 
-	total = atrforca+atrdestreza+atrinteligencia+atrconstituicao+atrsorte+atrcarisma;
+	let total = atrforca+atrdestreza+atrinteligencia+atrconstituicao+atrsorte+atrcarisma;
 	
 	console.log(total);
 
@@ -16,8 +15,11 @@ function atualizarAtributos(){
 	if(total>20){
 		$("#pontosUsados").css('color','red');
 		$('#submitForm').prop('disabled', true);
-	}else if(total<=20){
+	}else if(total<20){
 		$("#pontosUsados").css('color','green');
-		$('#submitForm').prop('disabled', false);
-	}
+		$('#submitForm').prop('disabled', true);
+		}else{
+			$("#pontosUsados").css('color','green');
+			$('#submitForm').prop('disabled', false);
+		}
 }

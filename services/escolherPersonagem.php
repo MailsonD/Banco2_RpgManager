@@ -26,10 +26,9 @@ foreach ($personagens as $personagem) {
 			'nome'=>$personagem['nome'],
 			'avatar'=>$personagem['avatar'],
 			'classe'=>$personagem['classe'],
+			'raca'=>$personagem['raca'],
+			'atributos'=>$atributos['atributos'];
 		];
-		echo $personagem['nome'];
-		echo $personagem['avatar'];
-		echo $personagem['classe'];
 		header('location:../pages/home.php');
 		exit();
 	}

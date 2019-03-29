@@ -59,36 +59,36 @@
      <div class="col s15">
       <div class="input-field col s4">
         <p class="range-field"><p>Força</p>
-        <input type="range" id="forca" min="0" max="20" value="0" onmouseup="atualizarAtributos()"/>
+        <input type="range" name="forca" id="forca" min="0" max="20" value="0" onmouseup="atualizarAtributos()"/>
       </p>
     </div>
     <div class="input-field col s4">
       <p class="range-field"><p>Destreza</p>
-      <input type="range" id="destreza" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
+      <input type="range"  name="destreza" id="destreza" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
     </p>
   </div>
   <div class="input-field col s4">
     <p class="range-field"><p>Inteligência</p>
-    <input type="range" id="inteligencia" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
+    <input type="range" name="inteigencia" id="inteligencia" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
   </p>
 </div>
 <div class="input-field col s4">
   <p class="range-field"><p>Constituição</p>
-  <input type="range" id="constituicao" min="0" max="20" value="0"  onmouseup="atualizarAtributos()"/>
+  <input type="range" name="cosntituicao" id="constituicao" min="0" max="20" value="0"  onmouseup="atualizarAtributos()"/>
 </p>
 </div>
 <div class="input-field col s4">
   <p class="range-field"><p>Sorte</p>
-  <input type="range" id="sorte" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
+  <input type="range" name="sorte" id="sorte" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
 </p>
 </div>
 <div class="input-field col s4">
   <p class="range-field"><p>Carisma</p>
-  <input type="range" id="carisma" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
+  <input type="range" name="carisma" id="carisma" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
 </p>
 </div>
 </div>
-  <button class="waves-effect waves-light btn-large red darken-4" id="submitForm" >Criar
+  <button class="waves-effect waves-light btn-large red darken-4" id="submitForm" disabled="true" >Criar
 </button>
 </div>
 </div>
