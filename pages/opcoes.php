@@ -66,18 +66,19 @@
                                     <label for="email">E-mail</label>
                                 </div>
                                
-                                <div class="input-field col10 s10 white-text">
-                                    <select required name="experiencia">
-                                        <option value="Novato" selected="true">Novato</option>
+                                <div class="input-field col10 s10">
+
+                                    <select required name="experiencia" class=" browser-default">
+                                    <option value="" selected="true">Nível de experiência</option>
+                                        <option value="Novato">Novato</option>
                                         <option value="Experiênte">Experiênte</option>
                                         <option value="Especialista">Especialista</option>
                                     </select>
-                                    <label class="white-text">Nível de experiência
-                                    </label>
+                                    
                                 </div>
 
 
-                                <button class="btn waves-effect waves-light red" type="submit" name="action">Cadastrar
+                                <button class="btn waves-effect waves-light red" type="submit" name="action">Editar
                                 </button>
                             </div>
                         </form>
