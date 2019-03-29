@@ -10,60 +10,81 @@
       <form method="POST" action="../services/criarPersonagem.php">
 
         <input type="hidden" name="avatar" value="char2.png" id="avatarForm">
-       <div class="input-field col10 s10">
-        <input id="name" type="text" name="nome" class="validate white-text" maxlength="40" required>
-        <label for="name">Nome</label>
-      </div>
-      <div class="input-field col10 s10">
-        <input id="raca" type="text" name="raca" class="validate white-text" required>
-        <label for="raca">Raça</label>
+        <div class="input-field col10 s10">
+          <input id="name" type="text" name="nome" class="validate white-text" maxlength="40" required>
+          <label for="name">Nome</label>
+        </div>
+        <div class="input-field col10 s10">
+          <input id="raca" type="text" name="raca" class="validate white-text" required>
+          <label for="raca">Raça</label>
+        </div>
+
+        <div class="input-field col10 s10">
+          <input id="naturalidade" type="text" name="classe" class="validate white-text"  required>
+          <label for="classe">Classe</label>
+        </div>
+        <div class="input-field col10 s10 white-text">
+          <p>Adoração</p>
+          <select class="validate browser-default" required name="adoracao">
+            <option value="Odin" selected="true">Odin</option>
+            <option value="Freya">Freya</option>
+            <option value="Ymir">Ymir</option>
+            <option value="Camila">Camila</option>
+          </select>
+        </div>
+
+        <div class="row">
+          <div class="col s6">
+            <h6 class="center-align">Atributos 
+              <div class="pontos"><p class="yellow-text">
+                <div id="pontosTotais">20</div> 
+
+              </p>
+            </div>
+          </h6>
+        </div>
+        <div class="col s6">
+          <h6 class="center-align">AtributosGastos 
+            <div class="pontos"><p class="yellow-text">
+              <div id="pontosUsados">0</div>
+            </p>
+          </div>
+        </h6>
       </div>
 
-      <div class="input-field col10 s10">
-        <input id="naturalidade" type="text" name="classe" class="validate white-text"  required>
-        <label for="classe">Classe</label>
-      </div>
-      <div class="input-field col10 s10 white-text">
-        <p>Adoração</p>
-        <select class="validate browser-default" required name="adoracao">
-          <option value="Odin" selected="true">Odin</option>
-          <option value="Freya">Freya</option>
-          <option value="Ymir">Ymir</option>
-          <option value="Camila">Camila</option>
-        </select>
-      </div>
+    </div>
 
-      <h6>Atributos <div class="pontos"><p class="yellow-text">20</p></div></h6> 
-      <div class="row">
-       <div class="col s15">
-        <div class="input-field col s4">
-          <p class="range-field"><p>Força</p>
-          <input type="range" id="forca" min="0" max="20" />
-        </p>
-      </div>
+
+    <div class="row">
+     <div class="col s15">
       <div class="input-field col s4">
-        <p class="range-field"><p>Destreza</p>
-        <input type="range" id="desterza" min="0" max="20" />
+        <p class="range-field"><p>Força</p>
+        <input type="range" id="forca" min="0" max="20" value="0" onmouseup="atualizarAtributos()"/>
       </p>
     </div>
     <div class="input-field col s4">
-      <p class="range-field"><p>Inteligência</p>
-      <input type="range" id="inteligencia" min="0" max="20" />
+      <p class="range-field"><p>Destreza</p>
+      <input type="range" id="destreza" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
     </p>
   </div>
   <div class="input-field col s4">
-    <p class="range-field"><p>Sorte</p>
-    <input type="range" id="sorte" min="0" max="20" />
+    <p class="range-field"><p>Inteligência</p>
+    <input type="range" id="inteligencia" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
   </p>
 </div>
 <div class="input-field col s4">
-  <p class="range-field"><p>Carisma</p>
-  <input type="range" id="carisma" min="0" max="20" />
+  <p class="range-field"><p>Constituição</p>
+  <input type="range" id="constituicao" min="0" max="20" value="0"  onmouseup="atualizarAtributos()"/>
 </p>
 </div>
 <div class="input-field col s4">
-  <p class="range-field"><p>Fé</p>
-  <input type="range" id="fe" min="0" max="20" />
+  <p class="range-field"><p>Sorte</p>
+  <input type="range" id="sorte" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
+</p>
+</div>
+<div class="input-field col s4">
+  <p class="range-field"><p>Carisma</p>
+  <input type="range" id="carisma" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
 </p>
 </div>
 </div></div>
