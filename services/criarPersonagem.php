@@ -16,7 +16,7 @@ $atributos =
 	'forca'=>$_POST['forca'],			
 	'destreza'=>$_POST['destreza'],			
 	'inteligencia'=>$_POST['inteligencia'],			
-	'costituicao'=>$_POST['contituicao'],			
+	'constituicao'=>$_POST['constituicao'],			
 	'sorte'=>$_POST['sorte'],			
 	'carisma'=>$_POST['carisma'],			
 ];

@@ -69,12 +69,12 @@
   </div>
   <div class="input-field col s4">
     <p class="range-field"><p>Inteligência</p>
-    <input type="range" name="inteigencia" id="inteligencia" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
+    <input type="range" name="inteligencia" id="inteligencia" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
   </p>
 </div>
 <div class="input-field col s4">
   <p class="range-field"><p>Constituição</p>
-  <input type="range" name="cosntituicao" id="constituicao" min="0" max="20" value="0"  onmouseup="atualizarAtributos()"/>
+  <input type="range" name="constituicao" id="constituicao" min="0" max="20" value="0"  onmouseup="atualizarAtributos()"/>
 </p>
 </div>
 <div class="input-field col s4">
