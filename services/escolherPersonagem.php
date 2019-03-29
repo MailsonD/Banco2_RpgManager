@@ -20,12 +20,18 @@ $result = buscarMDB('usuario',$condicao);
 $personagens = $result['personagens'];
 
 foreach ($personagens as $personagem) {
-	if($nomePersonagem == $personagem['nome'] ){
-		$_SESSION['personagemSelecionado'] = [
-										'nome'=>$personagem['nome'],
-										'avatar'=>$personagem['avatar'],
-										'classe'=>$personagem['classe'],
-									];
+	if($nomePersonagem === $personagem['nome']){
+		$_SESSION['personagemSelecionado'] = 
+		[
+			'nome'=>$personagem['nome'],
+			'avatar'=>$personagem['avatar'],
+			'classe'=>$personagem['classe'],
+		];
+		echo $personagem['nome'];
+		echo $personagem['avatar'];
+		echo $personagem['classe'];
+		header('location:../pages/home.php');
+		exit();
 	}
 		
 }

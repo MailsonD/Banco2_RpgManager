@@ -50,12 +50,13 @@
            <p class="white-text">King</p>
          <?php 
           }else{ 
+            $personagem = $_SESSION['personagemSelecionado'];
           ?>
-             <img src=<?php echo '/assets/img/'.$document['avatar'].''; ?> class="avatar">
+             <img src=<?php echo '/assets/img/'.$personagem['avatar'].''; ?> class="avatar">
 
               <div class="card-content  grey darken-4">
-              <h5 class="white-text"><?php echo $document['nome']; ?></h5>
-              <p class="white-text"><?php echo $document['classe']; ?></p>
+              <h5 class="white-text"><?php echo $personagem['nome']; ?></h5>
+              <p class="white-text"><?php echo $personagem['classe']; ?></p>
            <?php
          } 
          ?> 
