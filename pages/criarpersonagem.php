@@ -7,7 +7,7 @@
       <img id="avatarSelecionado" src="/assets/img/char2.png" class="avatar"><br>
       <a class="waves-effect btn-small btn modal-trigger red darken-4" href="#avatar">Avatar</a>
       <?php include("avatars.php"); ?>
-      <form method="POST" action="../services/criarPersonagem.php">
+      <form id="criaPersonagem" method="POST" action="../services/criarPersonagem.php">
 
         <input type="hidden" name="avatar" value="char2.png" id="avatarForm">
         <div class="input-field col10 s10">
@@ -87,14 +87,15 @@
   <input type="range" id="carisma" min="0" max="20" value="0" onmouseup="atualizarAtributos()" />
 </p>
 </div>
-</div></div>
-
+</div>
+  <button class="waves-effect waves-light btn-large red darken-4" id="submitForm" >Criar
+</button>
+</div>
 </div>
 
-
-<button class="waves-effect waves-light btn-large red darken-4" type="submit" name="action">Criar
-</button>
 </form>
+
+
 
 
 </div>

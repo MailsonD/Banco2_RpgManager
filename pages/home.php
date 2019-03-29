@@ -111,6 +111,7 @@
   </script>
   <script src="../assets/js/selecionaFoto.js"></script>
   <script src="../assets/js/atributos.js"></script>
+  <script src="../assets/js/form.js"></script>
 
 
 </body>

@@ -16,8 +16,7 @@ $result = buscarMDB('usuario',$condicao);
 $personagens = $result['personagens'];
 
 foreach($personagens as $document){            
-
-	?>
+?>
 	<div class="card horizontal grey darken-4 white-text center-align">
 		<div class="card-content">
 		<img src=<?php echo '/assets/img/'.$document['avatar'].''; ?> class="avatar">
@@ -35,7 +34,6 @@ foreach($personagens as $document){
 
 
 	<?php
-
 
 }
 ?>
