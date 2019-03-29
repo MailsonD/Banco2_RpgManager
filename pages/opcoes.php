@@ -25,7 +25,7 @@
     <div class="col s12 m4 l8">
         <div class="card painel">
 
-            <div class="card-content center-align">
+            <div class="card-content center-align grey darken-4 white-text">
                 
 
                     <h4>Usuário </h4>
@@ -34,7 +34,7 @@
                 </center>
 
 
-                <div class=" card-tabs">
+                <div class=" card-tabs grey darken-4">
                     <ul class="tabs tabs-fixed-width">
                         <li class="tab"><a href="#dados">Meus dados <i class="small material-icons">person</i></a></li>
                         <li class="tab"><a href="#settings">Editar dados<i
@@ -42,7 +42,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="card-content grey lighten-4">
+                <div class="card-content grey darken-4">
                     <div id="dados">
                         <h5>Detalhes da conta:</h5>
                         <p><b>Nome completo:</b></p>
@@ -62,14 +62,13 @@
                                     <label for="email">E-mail</label>
                                 </div>
                                
-                                <div class="input-field col10 s10">
+                                <div class="input-field col10 s10 white-text">
                                     <select required name="experiencia">
                                         <option value="Novato" selected="true">Novato</option>
                                         <option value="Experiênte">Experiênte</option>
                                         <option value="Especialista">Especialista</option>
                                     </select>
-                                    <label>Nível de experiência
-                                        <font color="red"> * </font>
+                                    <label class="white-text">Nível de experiência
                                     </label>
                                 </div>
 
