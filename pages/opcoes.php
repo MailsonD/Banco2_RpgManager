@@ -44,30 +44,45 @@
                 </div>
                 <div class="card-content grey lighten-4">
                     <div id="dados">
-                        <h4>Detalhes da conta:</h4>
+                        <h5>Detalhes da conta:</h5>
                         <p><b>Nome completo:</b></p>
-                        <p><b>Telefone:</b> </p>
                         <p><b>E-mail: </b> </p>
-                        <p><b>Nascimento:</b>  </p>
+                        <p><b>Nível de experiência:</b>  </p>
                     </div>
-                    <div id="settings"><h4>Configuração da conta:</h4>
+                    <div id="settings"><h5>Configuração da conta:</h5>
+                    <form class="col10 s10">
+                                <div class="row">
+
+                                 <div class="input-field col10 s10">
+                                    <input id="name" type="text" class="validate" name="nome"maxlength="40" required>
+                                    <label for="name">Nome</label>
+                                </div>
+                                <div class="input-field col10 s10">
+                                    <input id="email" type="email" class="validate" name="email"required>
+                                    <label for="email">E-mail</label>
+                                </div>
+                               
+                                <div class="input-field col10 s10">
+                                    <select required name="experiencia">
+                                        <option value="Novato" selected="true">Novato</option>
+                                        <option value="Experiênte">Experiênte</option>
+                                        <option value="Especialista">Especialista</option>
+                                    </select>
+                                    <label>Nível de experiência
+                                        <font color="red"> * </font>
+                                    </label>
+                                </div>
+
+
+                                <button class="btn waves-effect waves-light" type="submit" name="action">Cadastrar
+                                </button>
+                            </div>
+                        </form>
                        
                 </div>
             </div>
 
-            <div id="md1" class="modal">
-                <div class="modal-content">
-                    <h4>Porfavor confirme</h4>
-                    <p>Todos os seus dados, podcasts ou turmas virtuais cadastrados no sistema também serão excluídos!
-                        </p>
-                    <p>Deseja continuar com esta ação?</p>
-                </div>
-                <div class="modal-footer">
-                    <a href="#!" class="modal-close btn">Não</a>
-                    <a href="/inicio?comando=UsuariosController&acao=desativarConta&emailUsuario=${sessionScope.usuarioLogado.email}"
-                       class="waves-effect waves-green red btn-flat center-align" id="md1_YesBtn">Sim</a>
-                </div>
-            </div>
+            
 
         </div>
     </div>
@@ -93,20 +108,19 @@
 
   <script src="../assets/js/init.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('.modal').modal();
-      $('select').formSelect();
-      <?php include("../services/msgErro.php")?>
-    });
-  </script>
+  
   <script>
     $(document).ready(function(){
       $('.tabs').tabs();
     });
   </script>
-  <script src="../assets/js/selecionaFoto.js"></script>
-  <script src="../assets/js/atributos.js"></script>
+  <script>
+    $(document).ready(function () {
+        $('.modal').modal();
+        $('select').formSelect();
+        <?php include("services/msgErro.php")?>
+    });
+</script>
 
 
 </body>
