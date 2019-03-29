@@ -14,6 +14,6 @@ $atributos = $personagem['atributos'];
     <p>Constituição: <?php echo $atributos['constituicao']; ?></p>
     <p>Sorte: <?php echo $atributos['sorte']; ?></p>
     <p>carisma: <?php echo $atributos['carisma']; ?></p>
-    <?php var_dump($atributos); ?>
+    
 
 </div>
