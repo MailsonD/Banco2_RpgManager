@@ -8,12 +8,14 @@
 	$senha = $_POST['senha'];
 	$nome = $_POST['nome'];
 	$experiencia = $_POST['experiencia'];
+	$estadoMusica = 'ligado';
 
 	$document = [
 				'email'=>$email,
 				'senha'=>$senha,
 				'nome'=>$nome,
 				'experiencia'=>$experiencia,
+				'estadoMusica'=>$estadoMusica,
 				];
 
 	if(!buscarMDB('usuario',['email'=>$email,]) == null){

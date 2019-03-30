@@ -17,6 +17,7 @@
 
 	if(!$result==null){
 		$_SESSION['logado'] = $email;
+		$_SESSION['estadoMusica'] = $result['estadoMusica'];
 		header('location:../pages/home.php'); 
 	}else{
 		$_SESSION['msg'] = "Erro de autenticação";
