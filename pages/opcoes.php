@@ -56,10 +56,22 @@
 
               <br/>
               <br/>
-              <a class="btn waves-effect waves-light red" name="action">Desativar música
+              <a class="btn waves-effect waves-light red" name="action">Desativar música automática
               </a>
-              <a class="btn waves-effect waves-light red" name="action">Excluir Conta
+              <a href="#modalexcluir" class="btn waves-effect waves-light red modal-trigger" name="action">Excluir Conta
               </a>
+
+              <div id="modalexcluir" class="modal">
+                <div class="modal-content" style="color: black">
+                  <h4>Confirmação de exclusão</h4>
+                  <p>Deseja realmente continuar com a exclusão da sua conta?</p>
+                  <p>Todos os seus dados e personágens serão excluídos do sistema também!</p>
+                </div>
+                <div class="modal-footer">
+                  <a href="#!" class="waves-effect waves-green btn-flat">Confirmar</a>
+                  <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
+                </div>
+              </div>
             </div>
 
             <div id="settings"><h5>Configuração da conta:</h5>
@@ -67,7 +79,9 @@
                 <div class="row">
 
                  <div class="input-field col10 s10">
-                  <input id="name" type="text" class="validate white-text" name="nome"maxlength="40" value=<?php echo ''.$usuarioLogado['nome'].''; ?>  required>
+                  <input id="name" type="text" class="validate white-text" name="nome"maxlength="40" value='<?php
+                    echo $usuarioLogado['nome'];
+                    ?>'  required>
                   <label for="name">Nome</label>
                 </div>
                 <div class="input-field col10 s10">
@@ -131,7 +145,7 @@
   $(document).ready(function () {
     $('.modal').modal();
     $('select').formSelect();
-    <?php include("services/msgErro.php")?>
+    <?php include("../services/msgErro.php")?>
   });
 </script>
 
