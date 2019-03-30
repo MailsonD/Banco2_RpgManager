@@ -2,7 +2,7 @@
 
 require("../databases/mongoDao.php");
 
-session_start()
+session_start();
 
 $emailLogado = $_SESSION['logado'];
 
@@ -17,7 +17,7 @@ if(isset($_SESSION['estadoMusica']) && $_SESSION['estadoMusica'] == "ligado"){
 
 	$atualizacao =
 	[
-		'estadoMusica'='desligado',
+		'estadoMusica'=> 'desligado',
 	];
 
 	$_SESSION['msg'] = "Musica desligada!";
@@ -27,7 +27,7 @@ if(isset($_SESSION['estadoMusica']) && $_SESSION['estadoMusica'] == "ligado"){
 }else{
 	$atualizacao =
 	[
-		'estadoMusica'='ligado',
+		'estadoMusica'=>'ligado',
 	];
 
 	$_SESSION['msg'] = "Musica ligada!";
@@ -36,7 +36,7 @@ if(isset($_SESSION['estadoMusica']) && $_SESSION['estadoMusica'] == "ligado"){
 }
 
 
-atualizarMDB('usuario'$condicao,$atualizacao);
+atualizarMDB('usuario',$condicao,$atualizacao);
 
 header('location:../pages/opcoes.php'); 	
 

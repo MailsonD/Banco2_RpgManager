@@ -56,7 +56,9 @@
 
               <br/>
               <br/>
-              <a href="../services/mudarEstadoMusica.php" class="btn waves-effect waves-light red" name="action">Desativar música automática
+              <a href="../services/mudarEstadoDaMusica.php" class="btn waves-effect waves-light red" name="action"><?php if($_SESSION['estadoMusica'] == 'ligado') echo "Desligar";
+                else echo "ligar";
+              ?> música automática
               </a>
               <a href="#modalexcluir" class="btn waves-effect waves-light red modal-trigger" name="action">Excluir Conta
               </a>
@@ -121,7 +123,7 @@
 
 
 <div class="audio">
-  <audio controls autoplay>
+  <audio id="musicTheme" controls autoplay>
     <source src="../assets/audio/audio.mp3" type="audio/mpeg">
     </audio>
   </div>
@@ -147,6 +149,8 @@
     $('select').formSelect();
     <?php include("../services/msgErro.php")?>
   });
+
+  <?php include("../services/aplicaEstadoMusica.php"); ?>
 </script>
 
 

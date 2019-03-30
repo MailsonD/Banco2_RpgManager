@@ -83,7 +83,7 @@
 
 
   <div class="audio">
-    <audio controls autoplay>
+    <audio id="musicTheme" controls autoplay>
       <source src="../assets/audio/audio.mp3" type="audio/mpeg">
       </audio>
     </div>
@@ -103,6 +103,7 @@
       $('select').formSelect();
       <?php include("../services/msgErro.php")?>
     });
+    <?php include("../services/aplicaEstadoMusica.php"); ?>
   </script>
   <script>
     $(document).ready(function(){
