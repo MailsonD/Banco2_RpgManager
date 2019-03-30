@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <?php
   require("../controllers/sessionController.php");
+  require("../services/dadosLogado.php");
   ?>
 </head>
 <body>
@@ -19,111 +20,119 @@
     <!-- <img src="../assets/img/gradient.jpg" class="degrade"> -->
     <img src="../assets/img/header.png" class="stroke">
     
-<div class="row">
-    <div class="col s12"></div>
-    <div class="col s12 m4 l2"></div>
-    <div class="col s12 m4 l8">
+    <div class="row">
+      <div class="col s12"></div>
+      <div class="col s12 m4 l2"></div>
+      <div class="col s12 m4 l8">
         <div class="card painel">
 
-            <div class="card-content center-align grey darken-4 white-text">
-                
-
-                    <h4>Usuário </h4>
-
-                    <p></p>
-                </center>
+          <div class="card-content center-align grey darken-4 white-text">
 
 
-                <div class=" card-tabs grey darken-4">
-                    <ul class="tabs tabs-fixed-width transparent red-text">
-                        <li class="tab"><a href="#dados">Meus dados <i class="small material-icons">person</i></a></li>
-                        <li class="tab"><a href="#settings">Editar dados<i
-                                class="small material-icons">settings</i></a>
-                        </li>
-                    </ul>
-                    <div class="card-action center-align">
+            <h4>Perfil </h4>
 
-          <a href="home.php" class="waves-effect waves-light btn-small  red darken-4">Voltar</a>
-        </div>
-                </div>
-                <div class="card-content grey darken-4">
-                    <div id="dados">
-                        <h5>Detalhes da conta:</h5>
-                        <p><b>Nome completo:</b></p>
-                        <p><b>E-mail: </b> </p>
-                        <p><b>Nível de experiência:</b>  </p>
-                    </div>
-                    <div id="settings"><h5>Configuração da conta:</h5>
-                    <form class="col10 s10">
-                                <div class="row">
-
-                                 <div class="input-field col10 s10">
-                                    <input id="name" type="text" class="validate" name="nome"maxlength="40" required>
-                                    <label for="name">Nome</label>
-                                </div>
-                                <div class="input-field col10 s10">
-                                    <input id="email" type="email" class="validate" name="email"required>
-                                    <label for="email">E-mail</label>
-                                </div>
-                               
-                                <div class="input-field col10 s10">
-
-                                    <select required name="experiencia" class=" browser-default">
-                                    <option value="" selected="true">Nível de experiência</option>
-                                        <option value="Novato">Novato</option>
-                                        <option value="Experiênte">Experiênte</option>
-                                        <option value="Especialista">Especialista</option>
-                                    </select>
-                                    
-                                </div>
+            <p></p>
+          </center>
 
 
-                                <button class="btn waves-effect waves-light red" type="submit" name="action">Editar
-                                </button>
-                            </div>
-                        </form>
-                       
-                </div>
+          <div class=" card-tabs grey darken-4">
+            <ul class="tabs tabs-fixed-width transparent red-text">
+              <li class="tab"><a href="#dados">Meus dados <i class="small material-icons">person</i></a></li>
+              <li class="tab"><a href="#settings">Editar dados<i
+                class="small material-icons">settings</i></a>
+              </li>
+            </ul>
+            <div class="card-action center-align">
+
+              <a href="home.php" class="waves-effect waves-light btn-small  red darken-4">Voltar</a>
+            </div>
+          </div>
+          <div class="card-content grey darken-4">
+            <div id="dados">
+              <h5>Detalhes da conta:</h5>
+              <p><b>Nome completo: <?php echo $usuarioLogado['nome']; ?></b></p>
+              <p><b>E-mail: <?php echo $usuarioLogado['email']; ?></b> </p>
+              <p><b>Nível de experiência: <?php echo $usuarioLogado['experiencia']; ?></b>  </p>
+
+              <br/>
+              <br/>
+              <a class="btn waves-effect waves-light red" name="action">Desativar música
+              </a>
+              <a class="btn waves-effect waves-light red" name="action">Excluir Conta
+              </a>
             </div>
 
-            
+            <div id="settings"><h5>Configuração da conta:</h5>
+              <form class="col10 s10" method="POST" action="../services/atualizarDados.php">
+                <div class="row">
 
+                 <div class="input-field col10 s10">
+                  <input id="name" type="text" class="validate white-text" name="nome"maxlength="40" value=<?php echo ''.$usuarioLogado['nome'].''; ?>  required>
+                  <label for="name">Nome</label>
+                </div>
+                <div class="input-field col10 s10">
+                  <input id="email" type="email" class="validate white-text" name="email" value=<?php echo ''.$usuarioLogado['email'].''; ?> required>
+                  <label for="email">E-mail</label>
+                </div>
+
+                <div class="input-field col10 s10">
+
+                  <select required name="experiencia" class=" browser-default">
+                    <option value="" selected="true">Nível de experiência</option>
+                    <option value="Novato">Novato</option>
+                    <option value="Experiênte">Experiênte</option>
+                    <option value="Especialista">Especialista</option>
+                  </select>
+
+                </div>
+
+
+                <button class="btn waves-effect waves-light red" type="submit" name="action">Editar
+                </button>
+              </div>
+            </form>
+
+          </div>
         </div>
+
+
+
+      </div>
     </div>
-</div>
+  </div>
 </div>
 <div class="col s12 m4 l2"></div>
 </div>
-    </div>
+</div>
 
 
-  <div class="audio">
-    <audio controls autoplay>
-      <source src="../assets/audio/audio.mp3" type="audio/mpeg">
-      </audio>
-    </div>
+<div class="audio">
+  <audio controls autoplay>
+    <source src="../assets/audio/audio.mp3" type="audio/mpeg">
+    </audio>
   </div>
+</div>
 
-  <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <script src="../assets/js/materialize.js"></script>
-  <script src="../assets/js/materialize.min.js"></script>
+<!--  Scripts-->
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="../assets/js/materialize.js"></script>
+<script src="../assets/js/materialize.min.js"></script>
 
-  <script src="../assets/js/init.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
-  
-  <script>
-    $(document).ready(function(){
-      $('.tabs').tabs();
-    });
-  </script>
-  <script>
-    $(document).ready(function () {
-        $('.modal').modal();
-        $('select').formSelect();
-        <?php include("services/msgErro.php")?>
-    });
+<script src="../assets/js/init.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.tabs').tabs();
+  });
+</script>
+<script>
+  $(document).ready(function () {
+    $('.modal').modal();
+    $('select').formSelect();
+    <?php include("services/msgErro.php")?>
+  });
 </script>
 
 
