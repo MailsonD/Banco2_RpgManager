@@ -28,6 +28,9 @@ foreach($personagens as $document){
 		<p><?php echo "<b>Adoração:</b> ".$document['adoracao']; ?></p>
 		<hr><br><br>
 		<a class="waves-effect waves-light btn-small red darken-4" href=<?php echo'../services/escolherPersonagem.php?nomePersonagem='.$document['nome'].'' ;?>>Escolher</a>
+		<br/>
+		<br/>
+		<a class="waves-effect waves-light btn-small red darken-4" href='../services/excluirPersonagem.php?nomePersonagem=<?php echo $document['nome']; ?>' >Excluir</a>
 
 	
 	</div></div>

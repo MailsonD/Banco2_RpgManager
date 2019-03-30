@@ -84,15 +84,27 @@ function adicionarAtributoMDB($nomeColecao,$condicao,$atualizacao){
 	);
 }
 
-//função genérica para excluir um ou vários documentos que atendem a uma condição
+//função genérica para excluir um documento que atende a uma condição
 function removerMDB($nomeColecao,$condicao){
 	global $db;
 	return $db->$nomeColecao->deleteOne($condicao);
 }
 
+//função genérica para excluir um ou vários documentos que atendem a uma condição
 function removerVariosMDB($nomeColecao,$condicao){
 	global $db;
 	return $db->$nomeColecao->deleteMany($condicao);
+}
+
+
+//função genérica para remover atributos a um documento que atende a uma
+//determianda condição
+function removerAtributoMDB($nomeColecao,$condicao,$atualizacao){
+	global $db;
+	return $db->$nomeColecao->updateMany(
+		$condicao,
+		['$pull' => $atualizacao]
+	);
 }
 
 ?>
