@@ -87,8 +87,12 @@ function adicionarAtributoMDB($nomeColecao,$condicao,$atualizacao){
 //função genérica para excluir um ou vários documentos que atendem a uma condição
 function removerMDB($nomeColecao,$condicao){
 	global $db;
-	return $db->$nomeColecao->deleteMany($condicao);
+	return $db->$nomeColecao->deleteOne($condicao);
 }
 
+function removerVariosMDB($nomeColecao,$condicao){
+	global $db;
+	return $db->$nomeColecao->deleteMany($condicao);
+}
 
 ?>

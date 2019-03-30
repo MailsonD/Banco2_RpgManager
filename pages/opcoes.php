@@ -56,7 +56,7 @@
 
               <br/>
               <br/>
-              <a class="btn waves-effect waves-light red" name="action">Desativar música automática
+              <a href="../services/mudarEstadoMusica.php" class="btn waves-effect waves-light red" name="action">Desativar música automática
               </a>
               <a href="#modalexcluir" class="btn waves-effect waves-light red modal-trigger" name="action">Excluir Conta
               </a>
@@ -68,8 +68,8 @@
                   <p>Todos os seus dados e personágens serão excluídos do sistema também!</p>
                 </div>
                 <div class="modal-footer">
-                  <a href="#!" class="waves-effect waves-green btn-flat">Confirmar</a>
-                  <a href="#!" class="modal-close waves-effect waves-red btn-flat">Cancelar</a>
+                  <a href='../services/excluirConta.php' class="waves-effect waves-red btn-flat red">Confirmar</a>
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat green">Cancelar</a>
                 </div>
               </div>
             </div>
