@@ -15,12 +15,12 @@ hr {
 }
 .mensagem{
     position: absolute;
-    bottom: 10px;
+    bottom: 20px;
 
 }
 .chatContent{
-    height: 320px;
-    width: 500px;
+    height: 370px;
+    width: 900px;
 }
 .icon{width: 80px;
 

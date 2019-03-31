@@ -4,19 +4,28 @@
         <div class="card-content">
           <span class="card-title">Chat</span>
           <div class="card grey darken-3 white-text center-align chatContent">
-              <br></p><br>
+          
+             
           </div> 
 
                             <div class="input-field chatMessages">
-                                <input id="comentario" type="text" name="comentario">
-                                <label for="comentario" id="mensagem"></label> <button class="btn-floating waves-effect waves-light red" type="submit" name="action"><i
-                                    class="material-icons right">chat</i>
+                                <form style="display:inherit">
+        <div class="col m10 s10" >
+          <input type="text" placeholder="Envie uma mensagem..."/>
+        </div>
+        <div class="col m2 s2" >
+          
+          <button type="submit" class="btn chat-submit-button red"><i class="material-icons">send</i></button>
+        </div>
+      </form>
                             </button>
                             
                             </div>
 
                        
-                           
+                    
+      
+        
                     
        
        
