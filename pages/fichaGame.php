@@ -3,6 +3,7 @@
 
 $atributos = $personagem['atributos'];
 
+
 ?>
 
 <h4><?php echo $personagem['nome']; ?></h4>
