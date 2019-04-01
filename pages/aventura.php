@@ -56,7 +56,7 @@
 <div class="card-content grey darken-4 center-align m3">
 
 
-  <a class="waves-effect btn-small btn red darken-4" href="">Mapa</a>
+  <a class="waves-effect btn-small modal-trigger btn red darken-4" href="#modalMapa">Mapa</a>
   <?php include("mapa.php"); ?>
   <br>
   <div class="player">

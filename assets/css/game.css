@@ -107,6 +107,12 @@ body{
 .pointer{
     cursor: pointer;
 }
+#modalMapa{
+    width: 70% !important ; height: 70% !important;
+    border: 4px double #B76F1C;
+border-radius: 20px;
+
+}
 #dado{
     width: 200px !important ; height: 300px !important;
     border: 5px double rgba(201,12,4,0.49);
