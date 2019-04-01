@@ -57,6 +57,7 @@
 
 
   <a class="waves-effect btn-small btn red darken-4" href="">Mapa</a>
+  <?php include("mapa.php"); ?>
   <br>
   <div class="player">
     <?php 
