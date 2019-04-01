@@ -109,6 +109,8 @@ body{
 }
 #dado{
     width: 200px !important ; height: 300px !important;
+    border: 5px double rgba(201,12,4,0.49);
+border-radius: 40px 40px 40px 40px;
 }
 .style-two {
     border: 0;
