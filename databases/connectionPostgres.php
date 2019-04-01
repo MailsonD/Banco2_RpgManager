@@ -2,7 +2,7 @@
 
 function getConnection(){
 	try{
-		$conexao = pg_connect("host=127.0.0.1 port=5432 dbname=teste user=postgres password=postgres");
+		$conexao = pg_connect("host=127.0.0.1 port=5432 dbname=RpgManager user=postgres password=l00pisoo");
 		return $conexao;
 	}catch(Exception $e){
 		echo $e->me;
