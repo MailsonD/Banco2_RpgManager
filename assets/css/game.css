@@ -107,6 +107,9 @@ body{
 .pointer{
     cursor: pointer;
 }
+#dado{
+    width: 200px !important ; height: 300px !important;
+}
 .style-two {
     border: 0;
     height: 1px;
