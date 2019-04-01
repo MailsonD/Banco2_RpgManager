@@ -7,4 +7,5 @@ var config = {
 	storageBucket: "banco-para-o-prjeto-de-banco.appspot.com",
 	messagingSenderId: "690364251924"
 };
+
 firebase.initializeApp(config);
