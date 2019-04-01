@@ -1,5 +1,7 @@
 <div id="fichaGame" class="modal">
-<?php
+<?php 
+
+$personagem = $_SESSION['personagemSelecionado'];
 
 $atributos = $personagem['atributos'];
 

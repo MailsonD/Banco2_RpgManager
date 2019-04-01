@@ -48,7 +48,7 @@
           <img src="../assets/img/eSCOLHA.png" class="propaganda">
          
 
-          <div class="card-content  grey darken-4"> <hr class="style-two">
+          <div class="card-content  transparent">
            <!--<h5 class="white-text">Leoric</h5>
            <p class="white-text">King</p> -->
          <?php 
