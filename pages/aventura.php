@@ -33,15 +33,7 @@
       <p class="white-text">Erzeal</p><br>
       <p class="white-text">Kvothe</p><br>
       <p class="white-text">Binnie</p><br><hr><br>
-      <div class="input-field col4 m4">
-
-
-
-
-
-        <a class="waves-effect btn-small btn red darken-4  modal-trigger" href="#dado">Dados</a>
-        <?php include("dado.php"); ?> 
-      </div>
+      
     </div>
 
     <div class="row"> 
@@ -58,7 +50,27 @@
 
   <a class="waves-effect btn-small modal-trigger btn red darken-4" href="#modalMapa">Mapa</a>
   <?php include("mapa.php"); ?>
-  <br>
+  <br><br>
+  <div id="dado" class="col s2 m3">
+    <br>
+    
+<p class="white-text">Dado</p>
+<br>
+<select id="valoresDados" class="browser-default">
+    <option value="D4">D4</option>
+    <option value="D8">D8</option>
+    <option value="D10">D10</option>
+    <option value="D12">D12</option>
+  </select>
+            
+<hr class="style-two"> 
+   
+   <p class="white-text" id="seunumero"></p>
+  
+    <h5 id="mensagem" class="white-text"></h5>
+    <a class="waves-effect btn-small btn red darken-4 btn-floating" id="sortear"><i class="material-icons">keyboard_arrow_down</i></a> 
+</div>
+
   <div class="player">
     <?php 
 
