@@ -24,7 +24,8 @@ closeConnection($con);
 ?>
 
 <div id="modalMapa" class="modal">
-	<svg viewBox="<?php echo $viewBox ?>" width="550" height="500">
+	<h4> Terras Devastadas de Diangrônia</h4>
+	<svg viewBox="<?php echo $viewBox ?>" width="550" height="450">
 <?php				
 if($resultRegioes){
 	while($row = pg_fetch_array($resultRegioes)){
