@@ -37,15 +37,10 @@
 
 
 
-        <select class="browser-default">
-          <option value="" disabled selected>Dado</option>
-          <option value="1">D6</option>
-          <option value="2">D8</option>
-          <option value="3">D10</option>
-        </select> <br>
 
 
-        <a class="waves-effect btn-small btn red darken-4" href="" id="sortear">Sortear</a>
+        <a class="waves-effect btn-small btn red darken-4  modal-trigger" href="#dado">Dados</a>
+        <?php include("dado.php"); ?> 
       </div>
     </div>
 

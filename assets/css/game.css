@@ -107,6 +107,11 @@ body{
 .pointer{
     cursor: pointer;
 }
+.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #660000, #CC0000, #660000);
+}
 
 /* width */
 ::-webkit-scrollbar {
