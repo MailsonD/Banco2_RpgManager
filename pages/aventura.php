@@ -31,7 +31,7 @@
       <p class="white-text">Tauriel</p><br>
       <p class="white-text">Erzeal</p><br>
       <p class="white-text">Kvothe</p><br>
-      <p class="white-text">Binnie</p><br><br><br><hr>
+      <p class="white-text">Binnie</p><br><br><br><hr><br><br>
       <a class="waves-effect waves-light btn-small red darken-4 modal-trigger " href="#fichaGame">Ficha</a>
       <?php include("fichaGame.php"); ?>
       
