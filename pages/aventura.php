@@ -18,6 +18,7 @@
   <?php
   require("../controllers/sessionController.php");
   ?>
+  <?php include("../services/habilitaAventura.php"); ?>
   <script src="/assets/js/firebase.js"></script>
 </head>
 <body>
