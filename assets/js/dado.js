@@ -9,7 +9,7 @@ function dado(){
 var tipoDado=document.getElementById("valoresDados").value;
 document.getElementById("seunumero").innerHTML = "Seu número é:";
 if (tipoDado== "D4") {   
-document.getElementById("mensagem").innerHTML = andomIntFromInterval(1,4);
+document.getElementById("mensagem").innerHTML = randomIntFromInterval(1,4);
 } else if (tipoDado=="D12") {
 document.getElementById("mensagem").innerHTML =randomIntFromInterval(1,12);
   }else if (tipoDado=="D10") {
