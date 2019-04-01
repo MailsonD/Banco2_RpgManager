@@ -11,7 +11,7 @@
       <div class="input-field chatMessages">
         <form id="caixaMensagens" style="display:inherit">
           <div class="col m10 s10" >
-            <input id="campoMensagem" class="white-text" type="text" placeholder="Envie uma mensagem..."/>
+            <input class="white-text"  id="campoMensagem"  type="text" placeholder="Envie uma mensagem..."/>
           </div>
           <div class="col m2 s2" >
 
