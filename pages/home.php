@@ -45,9 +45,10 @@
 
           ?>
           <!-- <img src='/assets/img/char.png' class="avatar"> -->
-          <p>Escolha um herói e inicie sua jornada!</p>
+          <img src="../assets/img/eSCOLHA.png" class="propaganda">
+         
 
-          <div class="card-content  grey darken-4">
+          <div class="card-content  grey darken-4"> <hr class="style-two">
            <!--<h5 class="white-text">Leoric</h5>
            <p class="white-text">King</p> -->
          <?php 
@@ -74,8 +75,8 @@
          </div>
          <ul class="tabs grey darken-4"> 
 
-          <li class="tab"><a href="#test1">Meus heróis</a></li>
-          <li class="tab"><a href="#test4">Criar novo</a></li>
+          <li class="tab"><a class="white-text" href="#test1">Meus heróis</a></li>
+          <li class="tab"><a class="white-text" href="#test4">Criar novo</a></li>
         </ul>
 
       </div>

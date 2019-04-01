@@ -77,12 +77,21 @@ hr {
     text-align: center;
 }
 hr:after {
-    content: "§";
+    content: "";
     display: inline-block;
     position: relative;
     top: -0.7em;
     font-size: 1.5em;
     padding: 0 0.25em;
+}
+.propaganda{
+    width: 300px;
+
+}
+.style-two {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #660000, #CC0000, #660000);
 }
 
 /* width */
