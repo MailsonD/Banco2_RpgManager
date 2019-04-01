@@ -37,17 +37,19 @@
     <div id="test4" class="col s12 m6 painel"><?php include("criarpersonagem.php"); ?></div>
     <div class="col s7 m4 painel">
       <div class="card center-align char transparent">
+        
 
 
         <?php 
         if(!isset($_SESSION['personagemSelecionado'])){
 
           ?>
-          <img src='/assets/img/char.png' class="avatar">
+          <!-- <img src='/assets/img/char.png' class="avatar"> -->
+          <p>Escolha um herói e inicie sua jornada!</p>
 
           <div class="card-content  grey darken-4">
-           <h5 class="white-text">Leoric</h5>
-           <p class="white-text">King</p>
+           <!--<h5 class="white-text">Leoric</h5>
+           <p class="white-text">King</p> -->
          <?php 
           }else{ 
             $personagem = $_SESSION['personagemSelecionado'];
@@ -57,15 +59,17 @@
               <div class="card-content  grey darken-4">
               <h5 class="white-text"><?php echo $personagem['nome']; ?></h5>
               <p class="white-text"><?php echo $personagem['classe']; ?></p>
+              <br>
+               <a class="waves-effect waves-light btn-large btn modal-trigger  deep-orange darken-3" href="#ficha">Ficha</a>
+           <?php include("ficha.php"); ?>
            <?php
          } 
          ?> 
            <br>
 
-           <a class="btn-large waves-effect waves-light btn modal-trigger  deep-orange darken-3" href="#modal3">Inventário</a>
-           <?php include("inventario.php"); ?>
-           <a class="waves-effect waves-light btn-large btn modal-trigger  deep-orange darken-3" href="#ficha">Ficha</a>
-           <?php include("ficha.php"); ?>
+           <!-- <a class="btn-large waves-effect waves-light btn modal-trigger  deep-orange darken-3" href="#modal3">Inventário</a>
+            -->
+          
 
          </div>
          <ul class="tabs grey darken-4"> 

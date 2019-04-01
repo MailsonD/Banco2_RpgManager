@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/materialize.min.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/game.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
 
 </head>
 <body>
@@ -55,7 +56,15 @@
 <a class="waves-effect btn-small btn red darken-4" href="">Mapa</a>
 <br>
 <div class="player">
-<img src="../assets/img/char.png" class="circle icon" ><br><p class="white-text">Leoric</p></div>
+<?php 
+        
+            $personagem = $_SESSION['personagemSelecionado'];
+          ?>
+             <img src=<?php echo '/assets/img/'.$personagem['avatar'].''; ?> class="circle icon">
+
+              <br>
+              <p class="white-text"><?php echo $personagem['nome']; ?></p>
+         </div>
 
 </div>
 
