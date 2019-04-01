@@ -9,10 +9,16 @@
   <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/materialize.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="../assets/css/game.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
+
+   <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+  <!-- Firebase App is always required and must be first -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-database.js"></script>
+
   <?php
   require("../controllers/sessionController.php");
   ?>
+  <script src="/assets/js/firebase.js"></script>
 </head>
 <body>
   <div class="card horizontal transparent chat m12">
@@ -28,8 +34,8 @@
       <p class="white-text">Kvothe</p><br>
       <p class="white-text">Binnie</p><br><hr><br>
       <div class="input-field col4 m4">
-        
-       
+
+
 
         <select class="browser-default">
           <option value="" disabled selected>Dado</option>
@@ -37,16 +43,16 @@
           <option value="2">D8</option>
           <option value="3">D10</option>
         </select> <br>
-        
+
 
         <a class="waves-effect btn-small btn red darken-4" href="" id="sortear">Sortear</a>
       </div>
     </div>
 
     <div class="row"> 
-     
+
       <?php include("chat.php"); ?>
-      
+
 
     </div>
 
@@ -59,7 +65,7 @@
   <br>
   <div class="player">
     <?php 
-    
+
     $personagem = $_SESSION['personagemSelecionado'];
     ?>
     <img src=<?php echo '/assets/img/'.$personagem['avatar'].''; ?> class="circle icon">
