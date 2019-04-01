@@ -91,11 +91,13 @@
 });
 </script>
 <script>
+  <?php include("../services/usuarioLogado.php"); ?>
   $(document).ready(function () {
     $('.modal').modal();
     $('select').formSelect();
     <?php include("../services/msgErro.php")?>
   });
 </script>
+<script src="/assets/js/mensagens.js"></script>
 </body>
 </html>
