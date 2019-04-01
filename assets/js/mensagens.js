@@ -1,3 +1,11 @@
+document.getElementById("caixaMensagens").addEventListener("submit", (e)=>{
+	let msg = campoMensagem.value;
+	e.preventDefault();
+	escrever(msg);
+	caixaMensagens.reset();
+});
+
+
 function escrever(msg) {
 	var msgRef = firebase.database().ref().child('mensagens').push();
 	msgRef.set({
@@ -6,30 +14,27 @@ function escrever(msg) {
 	});
 }
 
-// firebase.database().ref().child('mensagens').on('child_added', function(snap) {
-//       var novamensagem = snap.val(); //Nova mensagem recebida.
-//       if(novamensagem.usuario == usuarioLogado){
-//       	boxMsg.innerHTML += "<div class='col m12 col s12'>"+
-//       	"<div class='box-blue'>"+
-//       	"<img class='pull-right'/>"+
-//       	"<p>"+novamensagem.texto+"</p>"+
-//       	"<div>"+
-//       	"<strong>"+novamensagem.usuario+"</strong>"+
-//       	"<span class='date'> Recived</span>"+
-//       	"</div>"+
-//       	"</div>"+
-//       	"</div>";
-//       }else{
-//       	boxMsg.innerHTML += "<div class='col m12 col s12'>"+
-//       	"<div class='box-gray'>"+
-//       	"<img class='pull-left'/>"+
-//       	"<p>"+novamensagem.texto+"</p>"+
-//       	"<div>"+
-//       	"<strong>"+novamensagem.usuario+"</strong>"+
-//       	"<span class='date'> Recived</span>"+
-//       	"</div>"+
-//       	"</div>"+
-//       	"</div>";
-//       }
-//       console.log(novamensagem.texto,novamensagem.usuario);
-//   });
+firebase.database().ref().child('mensagens').on('child_added', function(snap) {
+      var novamensagem = snap.val(); //Nova mensagem recebida.
+      if(novamensagem.usuario == usuarioLogado){
+      	boxMsg.innerHTML += "<div class='col s12 row'>"+
+        						"<div class='col m7 col s7'></div>"+
+        						"<div class='col m5 col s5 pull-right'>"+
+          							"<div class='box-blue'>"+
+            							"<p>"+novamensagem.msg+"</p>"+
+
+          							"</div>"+
+        						"</div>"+
+      						"</div>";
+      }else{
+      	boxMsg.innerHTML += "<div class='col s12 row'>"+
+        						"<div class='col m5 col s5 pull-left'>"+
+          							"<div class='box-gray'>"+
+            							"<label class='white-text'>"+novamensagem.usuario+"</laber>"+
+            								"<p>"+novamensagem.msg+"</p>"+
+          							"</div>"+
+        						"</div>"+
+        					"<div class='col m7 col s7'></div>"+
+      						"</div>";
+      }
+  });
