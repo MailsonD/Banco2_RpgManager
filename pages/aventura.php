@@ -23,16 +23,17 @@
 <body>
   <div class="card horizontal transparent chat m12" style="height: 100%" >
     <div class="card-content grey darken-4 center-align m3">
-      <a class="waves-effect btn-small btn red darken-4" href="/pages/home.php">Sair</a>
+      <a class="waves-effect btn-small btn red darken-4" href="/pages/home.php"><i class="material-icons">exit_to_app</i></a><br><br>
       <br><hr>
-      <a class="waves-effect waves-light btn-small red darken-4 modal-trigger " href="#fichaGame">Ficha</a>
-      <?php include("fichaGame.php"); ?>
+      
 
       <br><br><p class="white-text">Jogadores <br> conectados: </p><br>
       <p class="white-text">Tauriel</p><br>
       <p class="white-text">Erzeal</p><br>
       <p class="white-text">Kvothe</p><br>
-      <p class="white-text">Binnie</p><br><hr><br>
+      <p class="white-text">Binnie</p><br><br><br><hr>
+      <a class="waves-effect waves-light btn-small red darken-4 modal-trigger " href="#fichaGame">Ficha</a>
+      <?php include("fichaGame.php"); ?>
       
     </div>
 
