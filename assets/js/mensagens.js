@@ -16,6 +16,10 @@ function escrever(msg) {
 
 firebase.database().ref().child('mensagens').on('child_added', function(snap) {
       var novamensagem = snap.val(); //Nova mensagem recebida.
+      let nomeMeste = novamensagem.usuario;
+      if(novamensagem.mestre != undefined){
+        nomeMeste += " (MESTRE)";
+      }
       if(novamensagem.usuario == usuarioLogado){
       	boxMsg.innerHTML += "<div class='col s12 row'>"+
         						"<div class='col m7 col s7'></div>"+
@@ -30,7 +34,7 @@ firebase.database().ref().child('mensagens').on('child_added', function(snap) {
       	boxMsg.innerHTML += "<div class='col s12 row'>"+
         						"<div class='col m5 col s5 pull-left'>"+
           							"<div class='box-gray'>"+
-            							"<label class='white-text'>"+novamensagem.usuario+"</laber>"+
+            							"<label class='white-text'><b>"+nomeMeste+"</b></laber>"+
             								"<p>"+novamensagem.msg+"</p>"+
           							"</div>"+
         						"</div>"+

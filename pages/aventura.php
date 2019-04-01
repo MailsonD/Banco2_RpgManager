@@ -21,7 +21,7 @@
   <script src="/assets/js/firebase.js"></script>
 </head>
 <body>
-  <div class="card horizontal transparent chat m12">
+  <div class="card horizontal transparent chat m12" style="height: 100%" >
     <div class="card-content grey darken-4 center-align m3">
       <a class="waves-effect btn-small btn red darken-4" href="/pages/home.php">Sair</a>
       <br><hr>
