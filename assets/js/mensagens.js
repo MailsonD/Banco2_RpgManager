@@ -41,4 +41,5 @@ firebase.database().ref().child('mensagens').on('child_added', function(snap) {
         					"<div class='col m7 col s7'></div>"+
       						"</div>";
       }
+      $('#boxMsg').scrollTop($('#boxMsg')[0].scrollHeight);
   });

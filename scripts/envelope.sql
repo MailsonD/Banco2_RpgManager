@@ -1,0 +1,1 @@
+﻿SELECT ST_Envelope(ST_Union(geom)) FROM regiao 
