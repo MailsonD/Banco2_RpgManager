@@ -30,8 +30,18 @@ foreach($personagens as $document){
 		<a class="waves-effect waves-light btn-small red darken-4" href=<?php echo'../services/escolherPersonagem.php?nomePersonagem='.$document['nome'].'' ;?>>Escolher</a>
 		<br/>
 		<br/>
-		<a class="waves-effect waves-light btn-small red darken-4" href='../services/excluirPersonagem.php?nomePersonagem=<?php echo $document['nome']; ?>' >Excluir</a>
-
+		<a class="waves-effect waves-light btn-small red darken-4 modal-trigger"
+		href="#modalexcluir<?php echo $document['nome'] ?>">  Excluir</a>
+		<div id="modalexcluir<?php echo $document['nome'] ?>" class="modal">
+                <div class="modal-content" style="color: black">
+                  <h4>Confirmação de exclusão</h4>
+                  <p>Deseja realmente excluir o persoangem <?php echo $document['nome']; ?> </p>
+                </div>
+                <div class="modal-footer">
+                  <a href='../services/excluirPersonagem.php?nomePersonagem=<?php echo $document['nome']; ?>' class="waves-effect waves-red btn-flat red white-text">Confirmar</a>
+                  <a href="#!" class="modal-close waves-effect waves-green btn-flat green white-text">Cancelar</a>
+                </div>
+              </div>
 	
 	</div></div>
 
